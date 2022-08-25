@@ -1,9 +1,9 @@
 :root {
   --white: #ffffff;
-  --black: #000;
+  --black: #000000;
   --main: rgb(27, 227, 227);
   --accent1: rgb(182, 184, 184);
-  --accent2: rgb(12, 112, 199);
+  --accent2: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
 }
 
 * {
@@ -51,7 +51,8 @@ ul {
 }
 
 .backgroundColor {
-  background-color: var(--main);
+  background: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
+  padding-bottom: 5rem;
 }
 
 .centered {
@@ -77,9 +78,15 @@ ul {
   display: flex;
 }
 
+.oneColumn {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
 .twoColumns {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -94,7 +101,9 @@ ul {
 }
 
 .secondaryNavIcons:hover {
-  color: var(--main);
+  /*color: var(--main);*/
+  background-image: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
+  color: var(--white);
 }
 
 .skillsIcons {
@@ -109,7 +118,21 @@ ul {
   padding: 5rem;
   }
 
+.contactButtonIcon {
+  color: var(--white);
+}
+
+.contactButtonIcon:hover {
+  background-image: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
+  color: var(--white);
+}
+
 .footerArrowIcon {
   height: 1.5rem;
   width: 1.5rem;
+}
+
+.oneColumn {
+  margin-left: 30%;
+  margin-right: 30%;
 }

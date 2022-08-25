@@ -11,6 +11,9 @@ function Skills() {
       <section id="skills" className={`backgroundColor textCentered fullscreen`}>
         <h1 className="sectionTitle">Skills</h1>
         <div className={styles.skillsContainer}>
+          <div className={styles.skillsButtons}>
+            {/* Put buttons and icons here in a vertical row to select Front End, Tools, or Back End */}
+          </div>
           <div className={styles.skillsCard}>
             <h2 style={{color: 'white'}}>Front End</h2>
             <div className={styles.skillsIconsContainer}>

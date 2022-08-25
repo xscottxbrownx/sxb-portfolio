@@ -1,3 +1,10 @@
 .doubleTextSize {
     font-size: 3rem;
 }
+
+.introName {
+    background: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -3,6 +3,9 @@
     justify-content: space-around;
 }
 
+.skillsButtons {
+    
+}
 .skillsCard {
     display: flex;
     flex-direction: column;
