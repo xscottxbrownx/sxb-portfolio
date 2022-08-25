@@ -1,0 +1,15 @@
+.skillsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skillsCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillsIconsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}

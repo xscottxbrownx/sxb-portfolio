@@ -1,0 +1,7 @@
+.secondaryNavWrapper {
+    display: flex;
+}
+
+.secondaryNavLink {
+    margin: .25rem;
+}

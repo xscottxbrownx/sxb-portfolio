@@ -1,0 +1,115 @@
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --main: rgb(27, 227, 227);
+  --accent1: rgb(182, 184, 184);
+  --accent2: rgb(12, 112, 199);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.background {
+  padding-bottom: 5rem;
+}
+
+.backgroundColor {
+  background-color: var(--main);
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreen {
+  height: 100vh;
+}
+
+.mainColor {
+  color: var(--main);
+}
+
+.textCentered {
+  text-align: center;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.twoColumns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.toggleIcons {
+  height: 1.15rem;
+  width: 1.15rem;
+}
+
+.secondaryNavIcons {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.secondaryNavIcons:hover {
+  color: var(--main);
+}
+
+.skillsIcons {
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  padding: 5rem;
+  }
+
+.footerArrowIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+}

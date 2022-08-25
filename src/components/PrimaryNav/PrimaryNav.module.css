@@ -1,0 +1,22 @@
+.primaryNavWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.primaryNavLink {
+    margin-top: .25rem;
+    margin-right: .25rem;
+    margin-bottom: .25rem;
+    padding: .5rem;
+    display: flex;
+    color: var(--main);
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    border: solid var(--main) 2px;
+}
+
+.primaryNavLink:hover {
+    background-color: var(--main);
+    color: var(--white);
+}

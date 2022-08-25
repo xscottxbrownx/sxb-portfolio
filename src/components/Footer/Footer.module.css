@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main);
+}
+
+.footerLink {
+    padding: 3rem;
+}
+
+.footerLink:hover {
+    color: var(--white);
+}
+
+.footerLinkContainer {
+    display: flex;
+    justify-content: center;
+}

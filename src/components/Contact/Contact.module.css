@@ -1,0 +1,26 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+.contactFormInput {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.contactButton {
+    background-color: var(--white);
+    color: var(--main);
+    border: solid var(--main) 2px;
+    padding: 0.8rem;
+}
+
+.contactButtonText {
+    margin-right: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}

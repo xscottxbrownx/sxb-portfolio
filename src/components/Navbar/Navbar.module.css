@@ -1,0 +1,13 @@
+.navbarWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 1);
+    /*backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);*/
+    padding: .25rem;
+    /*border-bottom: solid 1px var(--main);*/
+}
