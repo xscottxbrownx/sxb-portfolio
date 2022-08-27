@@ -18,7 +18,7 @@ function Contact() {
           <textarea name="message" placeholder="Message" rows="8" required className={styles.contactFormInput}></textarea>
 
           <button type="submit" className={styles.contactButton}>
-            <span className={styles.contactButtonText}>send</span>
+            <span className={styles.contactButtonContent}>send</span>
             {/*<IconContext.Provider value={{className: "contactButtonIcon"}}>
               <FaPaperPlane />
     </IconContext.Provider>*/}

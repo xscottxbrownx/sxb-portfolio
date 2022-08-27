@@ -15,7 +15,9 @@ function ProjectsCard({ title, projectText }) {
                 <button className={styles.techButton}>bootstrap</button>
                 <button className={styles.techButton}>html</button>
             </div>
-            {projectText}
+            <div className={styles.projectText}>
+                {projectText}
+            </div>
             <div className={styles.linkContainer}>
                 <SlantedLink href="/" text="source code" />
                 <SlantedLink href="/" text="view live" />

@@ -1,6 +1,9 @@
 .slantedLink {
     margin: .35rem;
-    padding: .40rem;
+    padding-top: .40rem;
+    padding-bottom: .40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
     font-weight: 700;
     transform: skewX(-38deg);

@@ -20,6 +20,10 @@
     margin: 0.25rem;
 }
 
+.projectText {
+    line-height: 200%;
+}
+
 .linkContainer {
     display: flex;
     justify-content: center;
