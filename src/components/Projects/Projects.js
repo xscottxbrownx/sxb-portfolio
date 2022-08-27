@@ -78,11 +78,15 @@ function Projects() {
             <ProjectsCard title="Project2 Title" 
                           projectText={project2Text} 
                           tech={project2Tech} />
-            <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project2+Photo(s)" alt="Project2" style={{border: "black solid 2px"}} />
+            <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project2+Photo(s)" 
+                 alt="Project2" 
+                 style={{border: "black solid 2px"}} />
           </div>
 
           <div className={`twoColumns ${styles.projectMarginBottom}`}>  
-            <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project3+Photo(s)" alt="Project3" style={{border: "black solid 2px"}} />
+            <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project3+Photo(s)" 
+                 alt="Project3" 
+                 style={{border: "black solid 2px"}} />
             <ProjectsCard title="Project3 Title"
                           projectText={project3Text}
                           tech={project3Tech} />
@@ -92,7 +96,9 @@ function Projects() {
             <ProjectsCard title="Project4 Title"
                           projectText={project4Text}
                           tech={project4Tech} />
-            <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project4+Photo(s)" alt="Project4" style={{border: "black solid 2px"}} />
+            <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project4+Photo(s)" 
+                alt="Project4" 
+                style={{border: "black solid 2px"}} />
           </div>
 
         </div>

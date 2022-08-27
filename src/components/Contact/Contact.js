@@ -1,8 +1,8 @@
 // Style Imports
 import styles from "./Contact.module.css";
 // React Icons Imports
-import { FaPaperPlane } from 'react-icons/fa';
-import { IconContext } from "react-icons";
+//import { FaPaperPlane } from 'react-icons/fa';
+//import { IconContext } from "react-icons";
 
 
 function Contact() {
