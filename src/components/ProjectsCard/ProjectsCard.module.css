@@ -1,0 +1,27 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
+}
+
+.techContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.techButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.25rem;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}

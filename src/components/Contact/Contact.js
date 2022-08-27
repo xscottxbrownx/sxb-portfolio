@@ -19,9 +19,9 @@ function Contact() {
 
           <button type="submit" className={styles.contactButton}>
             <span className={styles.contactButtonText}>send</span>
-            <IconContext.Provider value={{className: "contactButtonIcon"}}>
+            {/*<IconContext.Provider value={{className: "contactButtonIcon"}}>
               <FaPaperPlane />
-            </IconContext.Provider>
+    </IconContext.Provider>*/}
           </button>
           
         </form>
