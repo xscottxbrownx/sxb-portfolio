@@ -1,19 +1,8 @@
-.contactForm {
+.slantedLink {
+    margin: .35rem;
+    padding: .40rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-.contactFormInput {
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-}
-
-.contactButton {
-    padding: 0.8rem;
+    font-weight: 700;
     transform: skewX(-38deg);
     -webkit-transform: skewX(-38deg);
     -ms-transform: skewX(-38deg);
@@ -25,19 +14,26 @@
     border-image-slice: 1;
     border-style: solid;
     border-width: 2px;
+    /*transition: all .6s cubic-bezier(.19,1,.22,1);*/
 }
 
-.contactButtonText {
+.slantedLinkContent {
     text-transform: uppercase;
     transform: skewX(38deg);
     -webkit-transform: skewX(38deg);
     -ms-transform: skewX(38deg);
-    margin-right: 0.25rem;
-    font-size: 1.25rem;
-    font-weight: 600;
+    background-image: var(--main);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*transition: all .6s cubic-bezier(.19,1,.22,1);*/
 }
 
-.contactButton:hover {
+.slantedLink:hover {
     background: var(--main);
+    -webkit-text-fill-color: var(--white);
+}
+
+.slantedLink:hover .slantedLinkContent{
     -webkit-text-fill-color: var(--white);
 }

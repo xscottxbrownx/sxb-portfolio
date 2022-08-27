@@ -1,15 +1,19 @@
 // Style Imports
 import styles from "./PrimaryNav.module.css";
+// Component Imports
+import SlantedLink from "../SlantedLink/SlantedLink";
 
 
 function PrimaryNav() {
     return (
+
         <nav className={styles.primaryNavWrapper}>
-            <a className={styles.primaryNavLink} href="#skills"><span className={styles.primaryNavLinkContent}>Skills</span></a>
-            <a className={styles.primaryNavLink} href="#projects">Projects</a>
-            <a className={styles.primaryNavLink} href="#about">About</a>
-            <a className={styles.primaryNavLink} href="#contact">Contact</a>
+            <SlantedLink href="#skills" text="skills" />
+            <SlantedLink href="#projects" text="projects" />
+            <SlantedLink href="#about" text="about" />
+            <SlantedLink href="#contact" text="contact" />
         </nav>
+        
     );
 }
 

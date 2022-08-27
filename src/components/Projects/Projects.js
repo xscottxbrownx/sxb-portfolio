@@ -1,5 +1,8 @@
 // Style Imports
 import styles from "./Projects.module.css";
+// Component Imports
+import SlantedLink from "../SlantedLink/SlantedLink";
+
 
 const projectTextSample = (
   <>
@@ -11,9 +14,12 @@ const projectTextSample = (
 
 function Projects() {
     return (
+
       <section id="projects" className="background">
         <div className={styles.projectsContainer}>
-          <h1 className="sectionTitle textCentered">Projects</h1>
+
+          <h1 className="sectionTitle textCentered">projects</h1>
+
           <div className={`twoColumns ${styles.projectMarginBottom}`}>
             <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project1+Photo(s)" alt="Project1" style={{border: "black solid 2px"}} />
             <div className={styles.projectText}>
@@ -26,11 +32,12 @@ function Projects() {
               </div>
               {projectTextSample}
               <div className={styles.linkContainer}>
-                <a className={styles.link} href="/">Source Code</a>
-                <a className={styles.link} href="/">View Live</a>
+                <SlantedLink href="/" text="source code" />
+                <SlantedLink href="/" text="view live" />
               </div>
             </div>
           </div>
+
           <div className={`twoColumns ${styles.projectMarginBottom}`}>
             <div className={styles.projectText}>
               <h2>Project2 Title</h2>
@@ -39,14 +46,17 @@ function Projects() {
                 <button className={styles.techButton}>bootstrap</button>
                 <button className={styles.techButton}>html</button>
               </div>
+              <div>
               {projectTextSample}
+              </div>
               <div className={styles.linkContainer}>
-                <a className={styles.link} href="/">Source Code</a>
-                <a className={styles.link} href="/">View Live</a>
+                <SlantedLink href="/" text="source code" />
+                <SlantedLink href="/" text="view live" />
               </div>
             </div>
             <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project2+Photo(s)" alt="Project2" style={{border: "black solid 2px"}} />
           </div>
+
           <div className={`twoColumns ${styles.projectMarginBottom}`}>  
             <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project3+Photo(s)" alt="Project3" style={{border: "black solid 2px"}} />
             <div className={styles.projectText}>
@@ -59,11 +69,12 @@ function Projects() {
               </div>
               {projectTextSample}
               <div className={styles.linkContainer}>
-                <a className={styles.link} href="/">Source Code</a>
-                <a className={styles.link} href="/">View Live</a>
+                <SlantedLink href="/" text="source code" />
+                <SlantedLink href="/" text="view live" />
               </div>
             </div>
           </div>
+          
           <div className={`twoColumns ${styles.projectMarginBottom}`}>
             <div className={styles.projectText}>
               <h2>Project4 Title</h2>
@@ -76,14 +87,16 @@ function Projects() {
               </div>
               {projectTextSample}
               <div className={styles.linkContainer}>
-                <a className={styles.link} href="/">Source Code</a>
-                <a className={styles.link} href="/">View Live</a>
+                <SlantedLink href="/" text="source code" />
+                <SlantedLink href="/" text="view live" />
               </div>
             </div>
             <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project4+Photo(s)" alt="Project4" style={{border: "black solid 2px"}} />
           </div>
+
         </div>
       </section>
+
     );
   }
   

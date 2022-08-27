@@ -1,9 +1,10 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --main: rgb(27, 227, 227);
-  --accent1: rgb(182, 184, 184);
-  --accent2: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
+  --main: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
+  --accent1: rgb(27,227,227);
+  --accent2: rgb(0, 212, 255);
+  --accent3: rgb(182, 184, 184);
 }
 
 * {
@@ -51,7 +52,7 @@ ul {
 }
 
 .backgroundColor {
-  background: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
+  background: var(--main);
   padding-bottom: 5rem;
 }
 
@@ -81,6 +82,9 @@ ul {
 .oneColumn {
   margin-left: 30%;
   margin-right: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .twoColumns {
@@ -102,8 +106,7 @@ ul {
 
 .secondaryNavIcons:hover {
   /*color: var(--main);*/
-  background-image: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
-  color: var(--white);
+  color: var(--accent1);
 }
 
 .skillsIcons {
@@ -119,20 +122,18 @@ ul {
   }
 
 .contactButtonIcon {
+  background-image: var(--main);
   color: var(--white);
+  /*color: var(--main);*/
 }
 
 .contactButtonIcon:hover {
-  background-image: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
+  background-image: var(--main);
   color: var(--white);
+
 }
 
 .footerArrowIcon {
   height: 1.5rem;
   width: 1.5rem;
-}
-
-.oneColumn {
-  margin-left: 30%;
-  margin-right: 30%;
 }

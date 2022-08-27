@@ -12,17 +12,21 @@ const aboutMainText = (
 
 function About() {
     return (
+
       <section id="about" className="backgroundColor">
         <div className={styles.aboutContainer}>
-          <h1 className="sectionTitle  textCentered">About</h1>
+
+          <h1 className="sectionTitle  textCentered">about</h1>
           <div className="twoColumns">
             <img src="https://via.placeholder.com/300x450/FFFFFF/000000?text=Stylized+Photo+Of+Scott" alt="Scott" style={{border: "black solid 2px"}} />
             <div className={styles.aboutText}>
               {aboutMainText}
             </div>
           </div>
+
         </div>
       </section>
+
     );
   }
   
