@@ -4,7 +4,7 @@ import styles from "./Projects.module.css";
 import ProjectsCard from "../ProjectsCard/ProjectsCard";
 
 
-const project1Text = (
+const project1Description = (
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam.
@@ -15,9 +15,7 @@ const project1Text = (
   </p>
 );
 
-const project1Tech = ["react", "redux", "bootstrap", "html"];
-
-const project2Text = (
+const project2Description = (
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam.
@@ -28,9 +26,7 @@ const project2Text = (
   </p>
 );
 
-const project2Tech = ["react", "bootstrap", "html"];
-
-const project3Text = (
+const project3Description = (
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam.
@@ -41,9 +37,7 @@ const project3Text = (
   </p>
 );
 
-const project3Tech = ["react", "bootstrap", "html"];
-
-const project4Text = (
+const project4Description = (
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam.
@@ -53,8 +47,6 @@ const project4Text = (
     Enim facilisis gravida neque convallis a.
   </p>
 );
-
-const project4Tech = ["react", "bootstrap", "html"];
 
 
 function Projects() {
@@ -69,15 +61,15 @@ function Projects() {
             <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project1+Photo(s)" 
                  alt="Project1" 
                  style={{border: "black solid 2px"}} />
-            <ProjectsCard title="Project1 Title" 
-                          projectText={project1Text} 
-                          tech={project1Tech} />
+            <ProjectsCard projectTitle="Project1 Title" 
+                          projectTech={["react", "redux", "bootstrap", "google API"]}
+                          projectDescription={project1Description} />
           </div>
 
           <div className={`twoColumns ${styles.projectMarginBottom}`}>
-            <ProjectsCard title="Project2 Title" 
-                          projectText={project2Text} 
-                          tech={project2Tech} />
+            <ProjectsCard projectTitle="Project2 Title" 
+                          projectTech={["react", "bootstrap", "html"]}
+                          projectDescription={project2Description} />
             <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project2+Photo(s)" 
                  alt="Project2" 
                  style={{border: "black solid 2px"}} />
@@ -87,15 +79,15 @@ function Projects() {
             <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project3+Photo(s)" 
                  alt="Project3" 
                  style={{border: "black solid 2px"}} />
-            <ProjectsCard title="Project3 Title"
-                          projectText={project3Text}
-                          tech={project3Tech} />
+            <ProjectsCard projectTitle="Project3 Title"
+                          projectTech={["react", "bootstrap", "html"]}
+                          projectDescription={project3Description} />
           </div>
           
           <div className={`twoColumns ${styles.projectMarginBottom}`}>
-            <ProjectsCard title="Project4 Title"
-                          projectText={project4Text}
-                          tech={project4Tech} />
+            <ProjectsCard projectTitle="Project4 Title"
+                          projectTech={["react", "bootstrap", "html"]}
+                          projectDescription={project4Description} />
             <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project4+Photo(s)" 
                 alt="Project4" 
                 style={{border: "black solid 2px"}} />

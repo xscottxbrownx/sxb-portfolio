@@ -2,21 +2,21 @@
 import styles from "./ProjectsCard.module.css";
 // Component Imports
 import SlantedLink from "../SlantedLink/SlantedLink";
+import React from "react";
 
 
-function ProjectsCard({ title, projectText }) {
+function ProjectsCard({ projectTitle, projectTech, projectDescription  }) {
     return (
 
         <div className={styles.projectCard}>
-            <h2>{title}</h2>
-            <div className={styles.techContainer}>
-                <button className={styles.techButton}>react</button>
-                <button className={styles.techButton}>redux</button>
-                <button className={styles.techButton}>bootstrap</button>
-                <button className={styles.techButton}>html</button>
+            <h2>{projectTitle}</h2>
+            <div id="techButtons" className={styles.techContainer}>
+                {projectTech.map( (tech) => {
+                    return <button className={styles.techButton}>{tech}</button>
+                })}
             </div>
             <div className={styles.projectText}>
-                {projectText}
+                {projectDescription}
             </div>
             <div className={styles.linkContainer}>
                 <SlantedLink href="/" text="source code" />
