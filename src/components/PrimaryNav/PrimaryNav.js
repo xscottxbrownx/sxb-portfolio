@@ -6,7 +6,7 @@ import SlantedLink from "../SlantedLink/SlantedLink";
 
 function PrimaryNav() {
     return (
-
+        
         <nav className={styles.primaryNavWrapper}>
             <SlantedLink href="#skills" text="skills" />
             <SlantedLink href="#projects" text="projects" />

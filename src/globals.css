@@ -85,6 +85,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .twoColumns {
@@ -102,6 +103,7 @@ ul {
 .secondaryNavIcons {
   height: 2.5rem;
   width: 2.5rem;
+  color: var(--black);
 }
 
 .secondaryNavIcons:hover {

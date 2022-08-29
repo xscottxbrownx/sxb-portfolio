@@ -1,5 +1,11 @@
 .doubleTextSize {
     font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.introFirstLine {
+    animation: fadeIn;
+    --animate-duration: 3.25s;
 }
 
 .introName {
@@ -7,4 +13,9 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.introSecondLine {
+    animation: fadeInLeft;
+    animation-delay: .8s;
 }

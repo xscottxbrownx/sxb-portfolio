@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
+    background-image: var(--main);
 }
 
 .footerLink {

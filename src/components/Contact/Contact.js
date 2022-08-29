@@ -1,16 +1,16 @@
 // Style Imports
 import styles from "./Contact.module.css";
-// React Icons Imports
-//import { FaPaperPlane } from 'react-icons/fa';
-//import { IconContext } from "react-icons";
-
+// React Animate On Scroll Imports
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function Contact() {
     return (
 
       <section id="contact" className="background textCentered">
 
-        <h1 className="sectionTitle">contact</h1>
+        <AnimationOnScroll animateIn="animate__fadeIn" duration={2}>
+          <h1 className="sectionTitle">contact</h1>
+        </AnimationOnScroll>  
 
         <form className={styles.contactForm}>
           <input type="text" name="name" placeholder="Name" required className={styles.contactFormInput}></input>
@@ -21,7 +21,7 @@ function Contact() {
             <span className={styles.contactButtonContent}>send</span>
             {/*<IconContext.Provider value={{className: "contactButtonIcon"}}>
               <FaPaperPlane />
-    </IconContext.Provider>*/}
+            </IconContext.Provider>*/}
           </button>
           
         </form>

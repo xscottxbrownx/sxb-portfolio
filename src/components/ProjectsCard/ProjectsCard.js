@@ -12,7 +12,7 @@ function ProjectsCard({ projectTitle, projectTech, projectDescription  }) {
             <h2>{projectTitle}</h2>
             <div id="techButtons" className={styles.techContainer}>
                 {projectTech.map( (tech) => {
-                    return <button className={styles.techButton}>{tech}</button>
+                    return <button className={styles.techButton} key={tech.toString()}>{tech}</button>
                 })}
             </div>
             <div className={styles.projectText}>

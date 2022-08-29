@@ -1,5 +1,7 @@
 // Style Imports
 import styles from "./About.module.css";
+// React Animate On Scroll Imports
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const aboutMainText = (
   <>
@@ -13,15 +15,19 @@ const aboutMainText = (
 function About() {
     return (
 
-      <section id="about" className="backgroundColor">
+      <section id="about" className="backgroundColor fullscreen">
         <div className={styles.aboutContainer}>
 
-          <h1 className="sectionTitle  textCentered">about</h1>
+          <AnimationOnScroll animateIn="animate__fadeIn" duration={2}>
+            <h1 className="sectionTitle">about</h1>
+          </AnimationOnScroll>
           <div className="twoColumns">
+
             <img src="https://via.placeholder.com/300x450/FFFFFF/000000?text=Stylized+Photo+Of+Scott" alt="Scott" style={{border: "black solid 2px"}} />
             <div className={styles.aboutText}>
               {aboutMainText}
             </div>
+            
           </div>
 
         </div>

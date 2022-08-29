@@ -1,6 +1,16 @@
+/* The animation code */
+@keyframes slideInFromLeft {
+    from {transform: translateX(-2000px)}
+    to {transform: translateX(0px);}
+}
+
 .primaryNavWrapper {
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-left: 1rem;
+    padding-left: .5rem;
+    /*animation-name: slideInFromLeft;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;*/
 }

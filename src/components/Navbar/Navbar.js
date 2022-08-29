@@ -10,9 +10,10 @@ function Navbar() {
     return (
 
       <div className={styles.navbarWrapper}>
-
-        <PrimaryNav />
-        <div className="flexbox">
+        <div className={`animate__animated animate__fadeInLeft ${styles.navbarLeft}`}>
+          <PrimaryNav />
+        </div>
+        <div className={`flexbox animate__animated animate__fadeInRight ${styles.navbarRight}`}>
           <Toggle />
           <SecondaryNav />
         </div>

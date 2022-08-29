@@ -1,19 +1,45 @@
 .skillsContainer {
     display: flex;
-    justify-content: space-around;
-}
-
-.skillsButtons {
-    
-}
-
-.skillsCard {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 22%;
+    margin-right: 22%;
 }
 
+.skillsCategories {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skillsCategory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+
+.skillsIconsContainers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* LEFT ALIGN? */
 .skillsIconsContainer {
     display: flex;
-    justify-content: space-around;
-    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem;
 }
+
+/*.skillsCard {
+    display: flex;
+    flex-direction: column;
+}*/
+
