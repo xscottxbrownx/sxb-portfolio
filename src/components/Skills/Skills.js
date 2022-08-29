@@ -15,57 +15,61 @@ function Skills() {
       <section id="skills" className={`backgroundColor fullscreen`}>
         <div className={styles.skillsContainer}>
 
-        <AnimationOnScroll animateIn="animate__fadeIn" duration={2}>
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" duration={1.75}>
           <h1 className="sectionTitle">skills</h1>
         </AnimationOnScroll>
           <IconContext.Provider value={{className: "skillsIcons"}}>
 
-            <div className={styles.skillsCategories}>
-              <div className={styles.skillsCategory}>
-                <FaLaptopCode />  
-                <h2 style={{color: 'white', fontSize: '1.75rem'}}>Front End</h2>
-              </div>
-              <div className={styles.skillsIconsContainers}>
-                <div className={styles.skillsIconsContainer}>  
-                  <FaHtml5 />
-                  <FaCss3Alt />
-                  <FaBootstrap />
-                  <FaJsSquare />
-                  <FaReact />
-                  <SiRedux />
+            <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" offset={150}>
+              <div className={styles.skillsCategories}>
+                <div className={styles.skillsCategory}>
+                  <FaLaptopCode />  
+                  <h2 style={{color: 'white', fontSize: '1.75rem'}}>Front End</h2>
+                </div>
+                <div className={styles.skillsIconsContainers}>
+                  <div className={styles.skillsIconsContainer}>  
+                    <FaHtml5 />
+                    <FaCss3Alt />
+                    <FaBootstrap />
+                    <FaJsSquare />
+                    <FaReact />
+                    <SiRedux />
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className={styles.skillsCategories}>
-              <div className={styles.skillsCategory}>
-                <FaTools />
-                <h2 style={{color: 'white', fontSize: '1.75rem'}}>Tools</h2>
-              </div>
-              <div className={styles.skillsIconsContainers}>
-                <div className={styles.skillsIconsContainer}>  
-                  <FaGitAlt />
-                  <FaGithubSquare />
-                  <SiVisualstudiocode />
-                  <SiHeroku />
-                  <FaDiscord />
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" offset={150}>
+              <div className={styles.skillsCategories}>
+                <div className={styles.skillsCategory}>
+                  <FaTools />
+                  <h2 style={{color: 'white', fontSize: '1.75rem'}}>Tools</h2>
+                </div>
+                <div className={styles.skillsIconsContainers}>
+                  <div className={styles.skillsIconsContainer}>  
+                    <FaGitAlt />
+                    <FaGithubSquare />
+                    <SiVisualstudiocode />
+                    <SiHeroku />
+                    <FaDiscord />
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className={styles.skillsCategories}>
-              <div className={styles.skillsCategory}>
-                <FaServer />
-                <h2 style={{color: 'white', fontSize: '1.75rem'}}>Back End</h2>
-              </div>
-              <div className={styles.skillsIconsContainers}>
-                <div className={styles.skillsIconsContainer}>  
-                  <FaNode />
-                  <SiFirebase />
-                  <SiPostgresql />
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" offset={150}>
+              <div className={styles.skillsCategories}>
+                <div className={styles.skillsCategory}>
+                  <FaServer />
+                  <h2 style={{color: 'white', fontSize: '1.75rem'}}>Back End</h2>
+                </div>
+                <div className={styles.skillsIconsContainers}>
+                  <div className={styles.skillsIconsContainer}>  
+                    <FaNode />
+                    <SiFirebase />
+                    <SiPostgresql />
+                  </div>
                 </div>
               </div>
-            </div>
+            </AnimationOnScroll>
 
           </IconContext.Provider>
 

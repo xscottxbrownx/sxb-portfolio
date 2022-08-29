@@ -18,9 +18,11 @@ function About() {
       <section id="about" className="backgroundColor fullscreen">
         <div className={styles.aboutContainer}>
 
-          <AnimationOnScroll animateIn="animate__fadeIn" duration={2}>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" duration={1.75}>
             <h1 className="sectionTitle">about</h1>
           </AnimationOnScroll>
+         
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" offset={200}>
           <div className="twoColumns">
 
             <img src="https://via.placeholder.com/300x450/FFFFFF/000000?text=Stylized+Photo+Of+Scott" alt="Scott" style={{border: "black solid 2px"}} />
@@ -29,6 +31,7 @@ function About() {
             </div>
             
           </div>
+          </AnimationOnScroll>
 
         </div>
       </section>
