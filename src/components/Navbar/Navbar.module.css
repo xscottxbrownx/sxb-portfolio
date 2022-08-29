@@ -13,11 +13,9 @@
 }
 
 .navbarLeft {
-    animation: fadeInLeft;
-    animation-delay: .8s;
+    animation-delay: 1.6s;
 }
 
 .navbarRight {
-    animation: fadeInRight;
-    animation-delay: .8s;
+    animation-delay: 1.6s;
 }

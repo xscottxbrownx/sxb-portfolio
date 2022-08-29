@@ -17,5 +17,6 @@
 
 .introSecondLine {
     animation: fadeInLeft;
+    --animate-duration: 3.25s;
     animation-delay: .8s;
 }
