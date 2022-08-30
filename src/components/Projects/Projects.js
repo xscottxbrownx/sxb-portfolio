@@ -1,138 +1,143 @@
 // Style Imports
 import styles from "./Projects.module.css";
 // React Animate On Scroll Imports
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { AnimationOnScroll } from "react-animation-on-scroll";
 // Component Imports
 import ProjectsCard from "../ProjectsCard/ProjectsCard";
-
-
-const project1Description = (
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam.
-    Orci eu lobortis elementum nibh tellus molestie nunc non. Ut consequat semper viverra nam libero justo laoreet sit.
-    Quis hendrerit dolor magna eget est lorem ipsum dolor.
-    Enim ut sem viverra aliquet eget sit.
-    Enim facilisis gravida neque convallis a.
-  </p>
-);
-
-const project2Description = (
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam.
-    Orci eu lobortis elementum nibh tellus molestie nunc non. Ut consequat semper viverra nam libero justo laoreet sit.
-    Quis hendrerit dolor magna eget est lorem ipsum dolor.
-    Enim ut sem viverra aliquet eget sit.
-    Enim facilisis gravida neque convallis a.
-  </p>
-);
-
-const project3Description = (
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam.
-    Orci eu lobortis elementum nibh tellus molestie nunc non. Ut consequat semper viverra nam libero justo laoreet sit.
-    Quis hendrerit dolor magna eget est lorem ipsum dolor.
-    Enim ut sem viverra aliquet eget sit.
-    Enim facilisis gravida neque convallis a.
-  </p>
-);
-
-const project4Description = (
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam.
-    Orci eu lobortis elementum nibh tellus molestie nunc non. Ut consequat semper viverra nam libero justo laoreet sit.
-    Quis hendrerit dolor magna eget est lorem ipsum dolor.
-    Enim ut sem viverra aliquet eget sit.
-    Enim facilisis gravida neque convallis a.
-  </p>
-);
-
+// Data Imports
+import projects from "../../data/ProjectsList.js";
 
 function Projects() {
-    return (
+  return (
+    <section id="projects" className="background">
+      <div className={styles.projectsSectionContainer}>
+        <AnimationOnScroll
+          animateIn="animate__fadeIn"
+          animateOut="animate__fadeOut"
+          duration={1.75}
+        >
+          <h1 className="sectionTitle textCentered">projects</h1>
+        </AnimationOnScroll>
 
-      <section id="projects" className="background">
-        <div className={styles.projectsContainer}>
-
-          <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" duration={1.75}>
-            <h1 className="sectionTitle textCentered">projects</h1>
+        <div className={`twoColumns ${styles.projectMarginBottom}`}>
+          <AnimationOnScroll
+            animateIn="animate__fadeInLeft"
+            animateOut="animate__fadeOut"
+            offset={300}
+          >
+            <div>
+              <img
+                src={projects[0].imageLink}
+                alt={projects[0].imageAlt}
+                style={projects[0].imageStyle}
+              />
+            </div>
           </AnimationOnScroll>
 
-          <div className={`twoColumns ${styles.projectMarginBottom}`}>
-            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOut="animate__fadeOut" offset={300}>
-              <div >
-                <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project1+Photo(s)" 
-                    alt="Project1" 
-                    style={{border: "black solid 2px"}} />
-              </div>
-            </AnimationOnScroll>
-            <AnimationOnScroll animateIn="animate__fadeInRight" animateOut="animate__fadeOut" offset={300}>
-              <div>
-                <ProjectsCard projectTitle="Project1 Title" 
-                              projectTech={["react", "redux", "bootstrap", "google API"]}
-                              projectDescription={project1Description} />
-              </div>
-            </AnimationOnScroll>
-          </div>
-
-          <div className={`twoColumns ${styles.projectMarginBottom}`}>
-            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOut="animate__fadeOut" offset={300}>
-              <div>
-                <ProjectsCard projectTitle="Project2 Title" 
-                              projectTech={["react", "bootstrap", "html"]}
-                              projectDescription={project2Description} />
-              </div>
-            </AnimationOnScroll>
-            <AnimationOnScroll animateIn="animate__fadeInRight" animateOut="animate__fadeOut" offset={300}>
-              <div>
-                <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project2+Photo(s)" 
-                    alt="Project2" 
-                    style={{border: "black solid 2px"}} />
-              </div>
-            </AnimationOnScroll>
-          </div>
-
-          <div className={`twoColumns ${styles.projectMarginBottom}`}>
-            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOut="animate__fadeOut" offset={300}>
-              <div>  
-                <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project3+Photo(s)" 
-                    alt="Project3" 
-                    style={{border: "black solid 2px"}} />
-              </div>
-            </AnimationOnScroll>
-            <AnimationOnScroll animateIn="animate__fadeInRight" animateOut="animate__fadeOut" offset={300}>
-              <div>
-                <ProjectsCard projectTitle="Project3 Title"
-                              projectTech={["react", "bootstrap", "html"]}
-                              projectDescription={project3Description} />
-              </div>
-            </AnimationOnScroll>
-          </div>
-          
-          <div className={`twoColumns ${styles.projectMarginBottom}`}>
-            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOut="animate__fadeOut" offset={300}>
-              <div>
-                <ProjectsCard projectTitle="Project4 Title"
-                              projectTech={["react", "bootstrap", "html"]}
-                              projectDescription={project4Description} />
-              </div>
-            </AnimationOnScroll>
-            <AnimationOnScroll animateIn="animate__fadeInRight" animateOut="animate__fadeOut" offset={300}>
-              <div>
-              <img src="https://via.placeholder.com/300x300/1BE3E3/000000?text=Project4+Photo(s)" 
-                  alt="Project4" 
-                  style={{border: "black solid 2px"}} />
-              </div>
-            </AnimationOnScroll>
-          </div>
-
+          <AnimationOnScroll
+            animateIn="animate__fadeInRight"
+            animateOut="animate__fadeOut"
+            offset={300}
+          >
+            <div>
+              <ProjectsCard
+                projectTitle={projects[0].title}
+                projectTech={projects[0].tech}
+                projectDescription={projects[0].description}
+              />
+            </div>
+          </AnimationOnScroll>
         </div>
-      </section>
 
-    );
-  }
-  
-  export default Projects;
+        <div className={`twoColumns ${styles.projectMarginBottom}`}>
+          <AnimationOnScroll
+            animateIn="animate__fadeInLeft"
+            animateOut="animate__fadeOut"
+            offset={300}
+          >
+            <div>
+              <ProjectsCard
+                projectTitle={projects[1].title}
+                projectTech={projects[1].tech}
+                projectDescription={projects[1].description}
+              />
+            </div>
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            animateIn="animate__fadeInRight"
+            animateOut="animate__fadeOut"
+            offset={300}
+          >
+            <div>
+              <img
+                src={projects[1].imageLink}
+                alt={projects[1].imageAlt}
+                style={projects[1].imageStyle}
+              />
+            </div>
+          </AnimationOnScroll>
+        </div>
+
+        <div className={`twoColumns ${styles.projectMarginBottom}`}>
+          <AnimationOnScroll
+            animateIn="animate__fadeInLeft"
+            animateOut="animate__fadeOut"
+            offset={300}
+          >
+            <div>
+              <img
+                src={projects[2].imageLink}
+                alt={projects[2].imageAlt}
+                style={projects[2].imageStyle}
+              />
+            </div>
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            animateIn="animate__fadeInRight"
+            animateOut="animate__fadeOut"
+            offset={300}
+          >
+            <div>
+              <ProjectsCard
+                projectTitle={projects[2].title}
+                projectTech={projects[2].tech}
+                projectDescription={projects[2].description}
+              />
+            </div>
+          </AnimationOnScroll>
+        </div>
+
+        <div className={`twoColumns ${styles.projectMarginBottom}`}>
+          <AnimationOnScroll
+            animateIn="animate__fadeInLeft"
+            animateOut="animate__fadeOut"
+            offset={300}
+          >
+            <div>
+              <ProjectsCard
+                projectTitle={projects[3].title}
+                projectTech={projects[3].tech}
+                projectDescription={projects[3].description}
+              />
+            </div>
+          </AnimationOnScroll>
+          <AnimationOnScroll
+            animateIn="animate__fadeInRight"
+            animateOut="animate__fadeOut"
+            offset={300}
+          >
+            <div>
+              <img
+                src={projects[3].imageLink}
+                alt={projects[3].imageAlt}
+                style={projects[3].imageStyle}
+              />
+            </div>
+          </AnimationOnScroll>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Projects;

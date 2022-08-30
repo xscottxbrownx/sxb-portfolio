@@ -100,18 +100,18 @@ ul {
   width: 1.15rem;
 }
 
-.secondaryNavIcons {
+.secondaryNavIcon {
   height: 2.5rem;
   width: 2.5rem;
   color: var(--black);
 }
 
-.secondaryNavIcons:hover {
+.secondaryNavIcon:hover {
   /*color: var(--main);*/
   color: var(--accent1);
 }
 
-.skillsIcons {
+.skillsIcon {
   height: 3rem;
   width: 3rem;
   margin: 1rem;
