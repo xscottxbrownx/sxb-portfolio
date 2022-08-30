@@ -14,8 +14,10 @@
 
 .navbarLeft {
     animation-delay: 1.6s;
+    --animate-duration: 1.25s;
 }
 
 .navbarRight {
     animation-delay: 1.6s;
+    --animate-duration: 1.25s;
 }
