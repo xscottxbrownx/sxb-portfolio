@@ -54,27 +54,27 @@ function Skills() {
                 <div className={styles.skillsIcons}>
                   <div className="centered">
                     <FaHtml5 />
-                    HTML
+                    <p>HTML</p>
                   </div>
                   <div className="centered">
                     <FaCss3Alt />
-                    CSS
+                    <p>CSS</p>
                   </div>
                   <div className="centered">
                     <FaBootstrap />
-                    Boostrap
+                    <p>Boostrap</p>
                   </div>
                   <div className="centered">
                     <FaJsSquare />
-                    Javascript
+                    <p>Javascript</p>
                   </div>
                   <div className="centered">
                     <FaReact />
-                    React
+                    <p>React</p>
                   </div>
                   <div className="centered">
                     <SiRedux />
-                    Redux
+                    <p>Redux</p>
                   </div>
                 </div>
               </div>
@@ -95,23 +95,23 @@ function Skills() {
                 <div className={styles.skillsIcons}>
                   <div className="centered">
                     <FaGitAlt />
-                    GIT
+                    <p>GIT</p>
                   </div>
                   <div className="centered">
                     <FaGithubSquare />
-                    Github
+                    <p>Github</p>
                   </div>
                   <div className="centered">
                     <SiVisualstudiocode />
-                    VScode
+                    <p>VScode</p>
                   </div>
                   <div className="centered">
                     <SiHeroku />
-                    Heroku
+                    <p>Heroku</p>
                   </div>
                   <div className="centered">
                     <FaDiscord />
-                    Discord
+                    <p>Discord</p>
                   </div>
                 </div>
               </div>
@@ -132,15 +132,15 @@ function Skills() {
                 <div className={styles.skillsIcons}>
                   <div className="centered">
                     <FaNode />
-                    Node.js
+                    <p>Node.js</p>
                   </div>
                   <div className="centered">
                     <SiFirebase />
-                    Firebase
+                    <p>Firebase</p>
                   </div>
                   <div className="centered">
                     <SiPostgresql />
-                    Postgres
+                    <p>Postgres</p>
                   </div>
                 </div>
               </div>

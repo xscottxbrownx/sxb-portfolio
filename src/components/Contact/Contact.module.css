@@ -1,13 +1,53 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 21%;
+  margin-right: 21%;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contactSocialsContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contactSocialsLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.contactSocialsLink:hover {
+  color: var(--accent1);
+}
+
+.contactSocialsLinkText{
+  padding: .5rem;
+}
+
 .contactForm {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 30%;
-  margin-right: 30%;
+  padding: 25px;
+
 }
 
 .contactFormInput {
-  width: 100%;
+  width: 400px;
   margin-bottom: 1rem;
   padding: 0.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -16,15 +56,10 @@
   outline: none;
 }
 
-.contactFormInput:focus {
-  background-image: var(--main);
-  color: var(--white);
-  border: solid 1px var(--black);
-}
 
 .contactFormInput:focus::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--white);
+  color: var(--black);
   opacity: 1; /* Firefox */
 }
 

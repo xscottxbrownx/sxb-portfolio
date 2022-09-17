@@ -3,6 +3,7 @@ import styles from "./SecondaryNav.module.css";
 // React Icons imports
 import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import Resume from "../../assets/Scott_Brown_Resume.pdf";
 
 function SecondaryNav() {
   return (
@@ -26,7 +27,7 @@ function SecondaryNav() {
         </a>
         <a
           className={styles.secondaryNavLink}
-          href="/"
+          href={`${Resume}`}
           target="_blank"
           rel="noopener noreferrer"
         >

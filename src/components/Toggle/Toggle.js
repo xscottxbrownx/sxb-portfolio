@@ -4,6 +4,9 @@ import styles from "./Toggle.module.css";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
+
+// Set this with localStorage, so it remembers my choice
+ 
 function Toggle() {
   return (
     <div className={styles.toggleContainer}>

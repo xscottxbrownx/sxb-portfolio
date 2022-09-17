@@ -80,8 +80,8 @@ ul {
 }
 
 .oneColumn {
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,10 +118,16 @@ ul {
 }
 
 .sectionTitle {
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   text-transform: uppercase;
   padding: 5rem;
-  }
+}
+
+.contactNavIcon {
+  height: 3.5rem;
+  width: 3.5rem;
+  padding: .5rem;
+}
 
 .contactButtonIcon {
   background-image: var(--main);
