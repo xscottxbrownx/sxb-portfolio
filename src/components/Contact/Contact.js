@@ -1,12 +1,39 @@
-// Style Imports
+// React imports
+import { useRef } from "react";
+// Style imports
 import styles from "./Contact.module.css";
-// React Animate On Scroll Imports
+// React Animate On Scroll imports
 import { AnimationOnScroll } from "react-animation-on-scroll";
 // React Icons imports
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { IconContext } from "react-icons";
+// EmailJS imports
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_sal06dm",
+        "template_9ncakv3",
+        form.current,
+        "IBCPvo5z_s92Qao1v"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    alert("submitted");
+    e.target.reset();
+  };
+
   return (
     <section id="contact" className="background">
       <div className={styles.contactContainer}>
@@ -58,11 +85,15 @@ function Contact() {
           </AnimationOnScroll>
 
           <AnimationOnScroll
-          animateIn="animate__fadeInRight"
-          animateOut="animate__fadeOut"
-          offset={150}
+            animateIn="animate__fadeInRight"
+            animateOut="animate__fadeOut"
+            offset={150}
           >
-            <form className={styles.contactForm}>
+            <form
+              className={styles.contactForm}
+              ref={form}
+              onSubmit={sendEmail}
+            >
               <input
                 type="text"
                 name="name"
