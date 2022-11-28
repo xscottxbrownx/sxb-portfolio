@@ -1,17 +1,21 @@
-// React imports
-import { useRef } from "react";
-// Style imports
+// React Imports
+import { useRef, useState } from "react";
+// Style Imports
 import styles from "./Contact.module.css";
-// React Animate On Scroll imports
+// React Animate On Scroll Imports
 import { AnimationOnScroll } from "react-animation-on-scroll";
-// React Icons imports
+// React Icons Imports
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { IconContext } from "react-icons";
-// EmailJS imports
+// EmailJS Imports
 import emailjs from "@emailjs/browser";
+// Custom Component Imports
+import Modal from "./Modal";
 
 function Contact() {
   const form = useRef();
+  const [showModal, setShowModal] = useState(false);
+  const toggleModal = () => setShowModal(!showModal);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -30,7 +34,7 @@ function Contact() {
           console.log(error.text);
         }
       );
-    alert("submitted");
+    toggleModal();
     e.target.reset();
   };
 
@@ -126,6 +130,7 @@ function Contact() {
           </AnimationOnScroll>
         </div>
       </div>
+      <Modal showModal={showModal} setShowModal={setShowModal}/>
     </section>
   );
 }
