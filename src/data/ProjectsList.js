@@ -10,35 +10,35 @@ const project1 = {
 };
 
 const project2 = {
-  title: "Project2 Title",
-  tech: ["React", "HTML5", "CSS"],
+  title: "Mortgage App",
+  tech: ["React", "Bootstrap", "HTML", "CSS", "DayJS"],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Orci eu lobortis elementum nibh tellus molestie nunc non. Ut consequat semper viverra nam libero justo laoreet sit. Quis hendrerit dolor magna eget est lorem ipsum dolor. Enim ut sem viverra aliquet eget sit. Enim facilisis gravida neque convallis a.",
+    "Calculates and displays monthly payment, total interest paid, and other details of loan - based on user provided inputs. URL parameters are used, so the resulting table and information can be shared to others via a web address link.",
   imageLink:
     "https://via.placeholder.com/300x300/1BE3E3/000000?text=Project2+Photo(s)",
-  imageAlt: "Project2",
+  imageAlt: "Mortgage App",
   imageStyle: { border: "black solid 2px" },
 };
 
 const project3 = {
-  title: "Project3 Title",
-  tech: ["React", "HTML5", "CSS"],
+  title: "Tickets Bot documentation",
+  tech: ["Markdown", "mdbook", "webp Images"],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Orci eu lobortis elementum nibh tellus molestie nunc non. Ut consequat semper viverra nam libero justo laoreet sit. Quis hendrerit dolor magna eget est lorem ipsum dolor. Enim ut sem viverra aliquet eget sit. Enim facilisis gravida neque convallis a.",
+    "I've used this discord bot since February 2022. It was clear their team needed much help with customer support and the documentation on the bot was lacking. I took it upon myself to help their users in the Tickets bot Support discord server. Tickets bot team ultimately saw the value I provided and offered me a spot on their official support team.  Shortly after, I convinced them to allow me to completely re-write the documentation to explain all features, settings, and possible configuration options - as it was obviously needed.",
   imageLink:
     "https://via.placeholder.com/300x300/1BE3E3/000000?text=Project3+Photo(s)",
-  imageAlt: "Project3",
+  imageAlt: "Tickets bot",
   imageStyle: { border: "black solid 2px" },
 };
 
 const project4 = {
-  title: "Project4 Title",
-  tech: ["React", "HTML5", "CSS"],
+  title: "Portfolio Site",
+  tech: ["React", "HTML", "CSS", "Javascript", "EmailJS", "Animate-On-Scroll"],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Orci eu lobortis elementum nibh tellus molestie nunc non. Ut consequat semper viverra nam libero justo laoreet sit. Quis hendrerit dolor magna eget est lorem ipsum dolor. Enim ut sem viverra aliquet eget sit. Enim facilisis gravida neque convallis a.",
+    "You are currently here. Site to house the current portfolio and resume of Scott Brown. Contact information available as well as links to social media profiles.",
   imageLink:
     "https://via.placeholder.com/300x300/1BE3E3/000000?text=Project4+Photo(s)",
-  imageAlt: "Project4",
+  imageAlt: "Portfolio Site",
   imageStyle: { border: "black solid 2px" },
 };
 

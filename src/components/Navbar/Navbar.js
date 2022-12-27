@@ -2,7 +2,7 @@
 import styles from "./Navbar.module.css";
 // Component Imports
 import PrimaryNav from "../PrimaryNav/PrimaryNav.js";
-import Toggle from "../Toggle/Toggle.js";
+// import Toggle from "../Toggle/Toggle.js";
 import SecondaryNav from "../SecondaryNav/SecondaryNav.js";
 
 function Navbar() {
@@ -14,7 +14,7 @@ function Navbar() {
       <div
         className={`flexbox animate__animated animate__fadeIn ${styles.navbarRight}`}
       >
-        <Toggle />
+        {/* Add Toggle.js here - when complete */}
         <SecondaryNav />
       </div>
     </div>
