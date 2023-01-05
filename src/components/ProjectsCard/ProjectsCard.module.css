@@ -18,8 +18,13 @@
   align-items: center;
   justify-content: center;
   margin: 0.25rem;
-  padding: 2px;
+  padding: 3px 10px;
   cursor: default;
+  background: var(--accent4);
+  color: black;
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 4px;
 }
 
 .projectText {

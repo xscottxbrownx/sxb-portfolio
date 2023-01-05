@@ -3,8 +3,9 @@
   --black: #000000;
   --main: linear-gradient(133deg, rgba(27,227,227,1) 48%, rgba(0,212,255,1) 100%);
   --accent1: rgb(27,227,227);
-  --accent2: rgb(0, 212, 255);
-  --accent3: rgb(182, 184, 184);
+  --accent2: rgb(13,219,241);
+  --accent3: rgb(0, 212, 255);
+  --accent4: rgb(220, 222, 222);
 }
 
 * {
@@ -108,7 +109,7 @@ ul {
 
 .secondaryNavIcon:hover {
   /*color: var(--main);*/
-  color: var(--accent1);
+  color: var(--accent2);
 }
 
 .skillsIcon {
