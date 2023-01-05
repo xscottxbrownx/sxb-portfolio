@@ -78,7 +78,7 @@ function Contact() {
                 </a>
                 <a
                   className={styles.contactSocialsLink}
-                  href="mailto:hello@scottxbrown.com"
+                  href="mailto:hello@scottxbrown.com?subject=Contacting%20via%20scottxbrown.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -132,7 +132,7 @@ function Contact() {
           </AnimationOnScroll>
         </div>
       </div>
-      <Modal showModal={showModal} setShowModal={setShowModal}/>
+      <Modal showModal={showModal} setShowModal={setShowModal} />
     </section>
   );
 }
