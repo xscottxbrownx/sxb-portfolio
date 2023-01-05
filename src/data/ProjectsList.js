@@ -7,17 +7,21 @@ const project1 = {
     "https://via.placeholder.com/300x300/1BE3E3/000000?text=Project1+Photo(s)",
   imageAlt: "Project1",
   imageStyle: { border: "black solid 2px" },
+  hrefSourceCode: "",
+  hrefViewLive: "https://www.scottxbrown.com",
 };
 
 const project2 = {
   title: "Mortgage App",
-  tech: ["React", "Bootstrap", "HTML", "CSS", "DayJS"],
+  tech: ["React", "Bootstrap", "DayJS"],
   description:
     "Calculates and displays monthly payment, total interest paid, and other details of loan - based on user provided inputs. URL parameters are used, so the resulting table and information can be shared to others via a web address link.",
   imageLink:
     "https://via.placeholder.com/300x300/1BE3E3/000000?text=Project2+Photo(s)",
   imageAlt: "Mortgage App",
   imageStyle: { border: "black solid 2px" },
+  hrefSourceCode: "https://github.com/xscottxbrownx/amortization",
+  hrefViewLive: "https://www.scottxbrown.com",
 };
 
 const project3 = {
@@ -29,17 +33,21 @@ const project3 = {
     "https://via.placeholder.com/300x300/1BE3E3/000000?text=Project3+Photo(s)",
   imageAlt: "Tickets bot",
   imageStyle: { border: "black solid 2px" },
+  hrefSourceCode: "https://github.com/xscottxbrownx/docs",
+  hrefViewLive: "https://docs.ticketsbot.net/",
 };
 
 const project4 = {
   title: "Portfolio Site",
-  tech: ["React", "HTML", "CSS", "Javascript", "EmailJS", "Animate-On-Scroll"],
+  tech: ["React", "EmailJS", "Animate-On-Scroll"],
   description:
     "You are currently here. Site to house the current portfolio and resume of Scott Brown. Contact information available as well as links to social media profiles.",
   imageLink:
     "https://via.placeholder.com/300x300/1BE3E3/000000?text=Project4+Photo(s)",
   imageAlt: "Portfolio Site",
   imageStyle: { border: "black solid 2px" },
+  hrefSourceCode: "https://github.com/xscottxbrownx/sxb-portfolio",
+  hrefViewLive: "https://www.scottxbrown.com",
 };
 
 const projects = [project1, project2, project3, project4];

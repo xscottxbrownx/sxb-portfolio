@@ -46,7 +46,8 @@ function Projects() {
                 projectTitle={projects[0].title}
                 projectTech={projects[0].tech}
                 projectDescription={projects[0].description}
-                href={projects[0].href}
+                hrefSourceCode={projects[0].hrefSourceCode}
+                hrefViewLive={projects[0].hrefViewLive}
               />
             </div>
           </AnimationOnScroll>
@@ -64,6 +65,8 @@ function Projects() {
                 projectTitle={projects[1].title}
                 projectTech={projects[1].tech}
                 projectDescription={projects[1].description}
+                hrefSourceCode={projects[1].hrefSourceCode}
+                hrefViewLive={projects[1].hrefViewLive}
               />
             </div>
           </AnimationOnScroll>
@@ -109,6 +112,8 @@ function Projects() {
                 projectTitle={projects[2].title}
                 projectTech={projects[2].tech}
                 projectDescription={projects[2].description}
+                hrefSourceCode={projects[2].hrefSourceCode}
+                hrefViewLive={projects[2].hrefViewLive}
               />
             </div>
           </AnimationOnScroll>
@@ -126,6 +131,8 @@ function Projects() {
                 projectTitle={projects[3].title}
                 projectTech={projects[3].tech}
                 projectDescription={projects[3].description}
+                hrefSourceCode={projects[3].hrefSourceCode}
+                hrefViewLive={projects[3].hrefViewLive}
               />
             </div>
           </AnimationOnScroll>
