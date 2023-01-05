@@ -54,6 +54,7 @@ function Contact() {
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
             offset={150}
+            duration={0.6}
           >
             <div className={styles.contactSocialsContainer}>
               <IconContext.Provider value={{ className: "contactNavIcon" }}>
@@ -92,6 +93,7 @@ function Contact() {
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
             offset={150}
+            duration={0.6}
           >
             <form
               className={styles.contactForm}

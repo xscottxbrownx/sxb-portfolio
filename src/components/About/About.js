@@ -33,6 +33,7 @@ function About() {
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
             offset={150}
+            duration={0.6}
           >
             <img
               src="https://via.placeholder.com/300x450/FFFFFF/000000?text=Stylized+Photo+Of+Scott"
@@ -44,6 +45,7 @@ function About() {
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
             offset={150}
+            duration={0.6}
           >
             <div className={styles.aboutText}>{aboutMainText}</div>
           </AnimationOnScroll>

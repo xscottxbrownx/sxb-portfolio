@@ -24,6 +24,7 @@ function Projects() {
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
             offset={300}
+            duration={0.6}
           >
             <div>
               <img
@@ -38,12 +39,14 @@ function Projects() {
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
             offset={300}
+            duration={0.6}
           >
             <div>
               <ProjectsCard
                 projectTitle={projects[0].title}
                 projectTech={projects[0].tech}
                 projectDescription={projects[0].description}
+                href={projects[0].href}
               />
             </div>
           </AnimationOnScroll>
@@ -54,6 +57,7 @@ function Projects() {
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
             offset={300}
+            duration={0.6}
           >
             <div>
               <ProjectsCard
@@ -67,6 +71,7 @@ function Projects() {
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
             offset={300}
+            duration={0.6}
           >
             <div>
               <img
@@ -83,6 +88,7 @@ function Projects() {
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
             offset={300}
+            duration={0.6}
           >
             <div>
               <img
@@ -96,6 +102,7 @@ function Projects() {
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
             offset={300}
+            duration={0.6}
           >
             <div>
               <ProjectsCard
@@ -112,6 +119,7 @@ function Projects() {
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
             offset={300}
+            duration={0.6}
           >
             <div>
               <ProjectsCard
@@ -125,6 +133,7 @@ function Projects() {
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
             offset={300}
+            duration={0.6}
           >
             <div>
               <img
