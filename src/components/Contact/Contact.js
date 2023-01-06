@@ -12,6 +12,7 @@ import emailjs from "@emailjs/browser";
 // Custom Component Imports
 import Modal from "./Modal";
 
+
 function Contact() {
   const form = useRef();
   const [showModal, setShowModal] = useState(false);
@@ -41,6 +42,7 @@ function Contact() {
   return (
     <section id="contact" className="background">
       <div className={styles.contactContainer}>
+        {/* contact section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
           animateOut="animate__fadeOut"
@@ -56,8 +58,10 @@ function Contact() {
             offset={150}
             duration={0.6}
           >
+            {/* social media icon links */}
             <div className={styles.contactSocialsContainer}>
               <IconContext.Provider value={{ className: "contactNavIcon" }}>
+                {/* LinkedIn */}
                 <a
                   className={styles.contactSocialsLink}
                   href="https://www.linkedin.com/in/scott-x-brown/"
@@ -67,6 +71,8 @@ function Contact() {
                   <FaLinkedin />
                   <h2 className={styles.contactSocialsLinkText}>LinkedIn</h2>
                 </a>
+
+                {/* Github */}
                 <a
                   className={styles.contactSocialsLink}
                   href="https://github.com/xscottxbrownx"
@@ -76,6 +82,8 @@ function Contact() {
                   <FaGithub />
                   <h2 className={styles.contactSocialsLinkText}>Github</h2>
                 </a>
+
+                {/* Email */}
                 <a
                   className={styles.contactSocialsLink}
                   href="mailto:hello@scottxbrown.com?subject=Contacting%20via%20scottxbrown.com"
@@ -89,6 +97,7 @@ function Contact() {
             </div>
           </AnimationOnScroll>
 
+          {/* contact form */}
           <AnimationOnScroll
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"

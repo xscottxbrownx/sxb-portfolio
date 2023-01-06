@@ -4,6 +4,7 @@ import styles from "./Footer.module.css";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
+
 function Footer() {
   return (
     <footer className={styles.footer}>

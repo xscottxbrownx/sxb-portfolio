@@ -27,10 +27,12 @@ import { IconContext } from "react-icons";
 // React Animate On Scroll Imports
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
+
 function Skills() {
   return (
     <section id="skills" className={`backgroundColor fullscreen`}>
       <div className={styles.skillsSectionContainer}>
+        {/* skills section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
           animateOut="animate__fadeOut"
@@ -40,6 +42,7 @@ function Skills() {
         </AnimationOnScroll>
 
         <IconContext.Provider value={{ className: "skillsIcon" }}>
+          {/* front end */}
           <AnimationOnScroll
             animateIn="animate__fadeIn"
             animateOut="animate__fadeOut"
@@ -81,6 +84,7 @@ function Skills() {
             </div>
           </AnimationOnScroll>
 
+          {/* tools */}
           <AnimationOnScroll
             animateIn="animate__fadeIn"
             animateOut="animate__fadeOut"
@@ -118,6 +122,7 @@ function Skills() {
             </div>
           </AnimationOnScroll>
 
+          {/* back end */}
           <AnimationOnScroll
             animateIn="animate__fadeIn"
             animateOut="animate__fadeOut"

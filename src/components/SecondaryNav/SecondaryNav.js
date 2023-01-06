@@ -5,10 +5,12 @@ import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import Resume from "../../assets/Scott_Brown_Resume.pdf";
 
+
 function SecondaryNav() {
   return (
     <div className={styles.secondaryNavWrapper}>
       <IconContext.Provider value={{ className: "secondaryNavIcon" }}>
+        {/* LinkedIn */}
         <a
           className={styles.secondaryNavLink}
           href="https://www.linkedin.com/in/scott-x-brown/"
@@ -17,6 +19,8 @@ function SecondaryNav() {
         >
           <FaLinkedin />
         </a>
+
+        {/* Github */}
         <a
           className={styles.secondaryNavLink}
           href="https://github.com/xscottxbrownx"
@@ -25,6 +29,8 @@ function SecondaryNav() {
         >
           <FaGithub />
         </a>
+
+        {/* Resume PDF */}
         <a
           className={styles.secondaryNavLink}
           href={`${Resume}`}

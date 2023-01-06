@@ -3,6 +3,7 @@ import styles from "./PrimaryNav.module.css";
 // Component Imports
 import SlantedLink from "../SlantedLink/SlantedLink";
 
+
 function PrimaryNav() {
   return (
     <nav className={styles.primaryNavWrapper}>

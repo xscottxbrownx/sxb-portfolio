@@ -50,6 +50,7 @@ const project4 = {
   hrefViewLive: "https://www.scottxbrown.com",
 };
 
+
 const projects = [project1, project2, project3, project4];
 
 export default projects;

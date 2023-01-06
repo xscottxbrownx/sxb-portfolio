@@ -7,10 +7,14 @@ import ProjectsCard from "../ProjectsCard/ProjectsCard";
 // Data Imports
 import projects from "../../data/ProjectsList.js";
 
+
+// can refactor with a .map or .forEach most likely - just need to alternate every other one
 function Projects() {
   return (
     <section id="projects" className="background">
       <div className={styles.projectsSectionContainer}>
+
+        {/* project section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
           animateOut="animate__fadeOut"
@@ -20,6 +24,7 @@ function Projects() {
         </AnimationOnScroll>
 
         <div className={`twoColumns ${styles.projectMarginBottom}`}>
+          {/* first project image */}
           <AnimationOnScroll
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
@@ -34,7 +39,7 @@ function Projects() {
               />
             </div>
           </AnimationOnScroll>
-
+          {/* first project description */}
           <AnimationOnScroll
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
@@ -54,6 +59,7 @@ function Projects() {
         </div>
 
         <div className={`twoColumns ${styles.projectMarginBottom}`}>
+          {/* second project description */}
           <AnimationOnScroll
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
@@ -70,6 +76,7 @@ function Projects() {
               />
             </div>
           </AnimationOnScroll>
+          {/* second project image */}
           <AnimationOnScroll
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
@@ -87,6 +94,7 @@ function Projects() {
         </div>
 
         <div className={`twoColumns ${styles.projectMarginBottom}`}>
+          {/* third project image */}
           <AnimationOnScroll
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
@@ -101,6 +109,7 @@ function Projects() {
               />
             </div>
           </AnimationOnScroll>
+          {/* third project description */}
           <AnimationOnScroll
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
@@ -120,6 +129,7 @@ function Projects() {
         </div>
 
         <div className={`twoColumns ${styles.projectMarginBottom}`}>
+          {/* fourth project description */}
           <AnimationOnScroll
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
@@ -136,6 +146,7 @@ function Projects() {
               />
             </div>
           </AnimationOnScroll>
+          {/* fourth project image */}
           <AnimationOnScroll
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
