@@ -3,22 +3,34 @@ import styles from "./About.module.css";
 // React Animate On Scroll Imports
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
+// ABOUT ME TEXT - make any changes here
 const aboutMainText = (
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac
-    felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla
-    facilisi nullam. Orci eu lobortis elementum nibh tellus molestie nunc non.
-    Ut consequat semper viverra nam libero justo laoreet sit. Quis hendrerit
-    dolor magna eget est lorem ipsum dolor. Enim ut sem viverra aliquet eget
-    sit. Enim facilisis gravida neque convallis a.
+    Using a multitude of online resources, my time is dedicated to learning as
+    much as I can about web developement, while owning and running{" "}
+    <a
+      href="https://www.birdmafia.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class={styles.aboutLink}>bird mafia</span>
+    </a>{" "}
+    with my wife. My 19 year career in big box retail management has prepared me
+    for a fast-paced, high stress enviornment. Working as a Store Manager has
+    sharpened my organization, prioritization, time management, and
+    communication skills. Collaboration with district staff, managers, and
+    associates has emphasized the value of team work.
   </p>
 );
 
+
+// MAIN COMPONENT THIS FILE RENDERS
 function About() {
   return (
     <section id="about" className="backgroundColor fullscreen">
       <div className={styles.aboutContainer}>
+
+        {/* about section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
           animateOut="animate__fadeOut"
@@ -29,6 +41,8 @@ function About() {
 
         {/*<AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" offset={200}>*/}
         <div className="twoColumns">
+
+          {/* about section image */}
           <AnimationOnScroll
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
@@ -41,6 +55,8 @@ function About() {
               style={{ border: "black solid 2px" }}
             />
           </AnimationOnScroll>
+
+          {/* about section text */}
           <AnimationOnScroll
             animateIn="animate__fadeInRight"
             animateOut="animate__fadeOut"
