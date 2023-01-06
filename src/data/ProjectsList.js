@@ -21,7 +21,7 @@ const project2 = {
   imageAlt: "Mortgage App",
   imageStyle: { border: "black solid 2px" },
   hrefSourceCode: "https://github.com/xscottxbrownx/amortization",
-  hrefViewLive: "https://www.scottxbrown.com",
+  hrefViewLive: "http://www.loan.scottxbrown.com",
 };
 
 const project3 = {
