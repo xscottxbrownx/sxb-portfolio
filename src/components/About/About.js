@@ -6,8 +6,8 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 // ABOUT ME TEXT - make any changes here
 const aboutMainText = (
   <p>
-    Using a multitude of online resources, my time is dedicated to learning as
-    much as I can about web developement, while owning and running{" "}
+    My time has been dedicated to learning as much as I can about web
+    developement, while owning and running{" "}
     <a
       href="https://www.birdmafia.com"
       target="_blank"
@@ -19,17 +19,16 @@ const aboutMainText = (
     for a fast-paced, high stress enviornment. Working as a Store Manager has
     sharpened my organization, prioritization, time management, and
     communication skills. Collaboration with district staff, managers, and
-    associates has emphasized the value of team work.
+    associates has emphasized the value of team work. I have been gaining
+    experience in this field and am ready to contribute to a meaningful team.
   </p>
 );
-
 
 // MAIN COMPONENT THIS FILE RENDERS
 function About() {
   return (
     <section id="about" className="backgroundColor fullscreen">
       <div className={styles.aboutContainer}>
-
         {/* about section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
@@ -41,7 +40,6 @@ function About() {
 
         {/*<AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" offset={200}>*/}
         <div className="twoColumns">
-
           {/* about section image */}
           <AnimationOnScroll
             animateIn="animate__fadeInLeft"
