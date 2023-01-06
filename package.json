@@ -1,5 +1,6 @@
 {
   "name": "sxb-portfolio",
+  "homepage": "https://www.scottxbrown.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
