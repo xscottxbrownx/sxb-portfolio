@@ -1,19 +1,19 @@
 const project1 = {
-  title: "Project1 Title",
-  tech: ["React", "Redux", "Bootstrap", "Google API"],
+  title: "FMC Site Mockup",
+  tech: ["NextJS", "AlchemySDK", "FontAwesomeIcons", "API's", "Web3", "NFTs", "Crypto"],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis donec. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Orci eu lobortis elementum nibh tellus molestie nunc non. Ut consequat semper viverra nam libero justo laoreet sit. Quis hendrerit dolor magna eget est lorem ipsum dolor. Enim ut sem viverra aliquet eget sit. Enim facilisis gravida neque convallis a.",
+    "A mockup site for a company that I co-founded in late September 2021. This company started as a discord server for NFT traders and friends. It quickly grew to over 15k members and 60k twitter followers all organically (no bots.) The server was focused on NFT education and alpha, and as such we also launched our own NFT to token-gate the valuable information in April 2022. This mockup has all information needed about the company and a dashboard area that includes: connection to your web 3 wallet or typed in wallet address, gallery of nfts, token balances, last 30 day history of transactions, floor price and holder informational charts by collection, and some more work-in-progress components.",
   imageLink:
     "https://via.placeholder.com/300x300/1BE3E3/000000?text=Project1+Photo(s)",
   imageAlt: "Project1",
   imageStyle: { border: "black solid 2px" },
-  hrefSourceCode: "",
-  hrefViewLive: "https://www.scottxbrown.com",
+  hrefSourceCode: "https://github.com/xscottxbrownx/mint-club",
+  hrefViewLive: "http://www.fmc.scottxbrown.com",
 };
 
 const project2 = {
   title: "Mortgage App",
-  tech: ["React", "Bootstrap", "DayJS"],
+  tech: ["React", "Bootstrap", "DayJS", "MetaTags"],
   description:
     "Calculates and displays monthly payment, total interest paid, and other details of loan - based on user provided inputs. URL parameters are used, so the resulting table and information can be shared to others via a web address link.",
   imageLink:
