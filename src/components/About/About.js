@@ -13,7 +13,7 @@ const aboutMainText = (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span class={styles.aboutLink}>bird mafia</span>
+      <span className={styles.aboutLink}>bird mafia</span>
     </a>{" "}
     with my wife. My 19 year career in big box retail management has prepared me
     for a fast-paced, high stress enviornment. Working as a Store Manager has

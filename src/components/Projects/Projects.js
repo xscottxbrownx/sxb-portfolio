@@ -8,8 +8,8 @@ import ProjectsCard from "../ProjectsCard/ProjectsCard";
 import projects from "../../data/ProjectsList.js";
 
 
-// can refactor with a .map or .forEach most likely - just need to alternate every other one
-function Projects() {
+// can refactor with a .map - just need to alternate every other one
+export default function Projects() {
   return (
     <section id="projects" className="background">
       <div className={styles.projectsSectionContainer}>
@@ -166,5 +166,3 @@ function Projects() {
     </section>
   );
 }
-
-export default Projects;
