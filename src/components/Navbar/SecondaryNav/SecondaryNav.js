@@ -1,18 +1,18 @@
-// Style Imports
-import styles from "./SecondaryNav.module.css";
 // React Icons imports
 import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import Resume from "../../assets/Scott_Brown_Resume.pdf";
+import Resume from "../../../assets/Scott_Brown_Resume.pdf";
 
 
-function SecondaryNav() {
+
+export default function SecondaryNav() {
+  
   return (
-    <div className={styles.secondaryNavWrapper}>
-      <IconContext.Provider value={{ className: "secondaryNavIcon" }}>
+    <div className="flex">
+      <IconContext.Provider value={{ className: "h-10 w-10 text-black hover:text-accent2" }}>
         {/* LinkedIn */}
         <a
-          className={styles.secondaryNavLink}
+          className="m-1"
           href="https://www.linkedin.com/in/scott-x-brown/"
           target="_blank"
           rel="noopener noreferrer"
@@ -22,7 +22,7 @@ function SecondaryNav() {
 
         {/* Github */}
         <a
-          className={styles.secondaryNavLink}
+          className="m-1"
           href="https://github.com/xscottxbrownx"
           target="_blank"
           rel="noopener noreferrer"
@@ -32,7 +32,7 @@ function SecondaryNav() {
 
         {/* Resume PDF */}
         <a
-          className={styles.secondaryNavLink}
+          className="m-1"
           href={`${Resume}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -43,5 +43,3 @@ function SecondaryNav() {
     </div>
   );
 }
-
-export default SecondaryNav;

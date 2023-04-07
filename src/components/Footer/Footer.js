@@ -1,23 +1,23 @@
-// Style Imports
-import styles from "./Footer.module.css";
 // React Icons Imports
 import { FaArrowCircleUp } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 
-function Footer() {
+export default function Footer() {
+  
   return (
-    <footer className={styles.footer}>
-      <a href="#top" className={styles.footerLink}>
-        <div className={styles.footerLinkContainer}>
-          <IconContext.Provider value={{ className: "footerArrowIcon" }}>
+    <footer className="bg-main flex items-center justify-center">
+      <a
+        href="#top"
+        className="p-12 transition-transform ease-in-out duration-500 hover:text-white hover:-translate-y-2"
+      >
+        <div className="flex justify-center">
+          <IconContext.Provider value={{ className: "h-6 w-6" }}>
             <FaArrowCircleUp />
           </IconContext.Provider>
         </div>
-        <p>back to top</p>
+        <p className="uppercase">back to top</p>
       </a>
     </footer>
   );
 }
-
-export default Footer;

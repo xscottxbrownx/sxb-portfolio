@@ -1,5 +1,3 @@
-// Style Imports
-import styles from "./Projects.module.css";
 // React Animate On Scroll Imports
 import { AnimationOnScroll } from "react-animation-on-scroll";
 // Component Imports
@@ -12,8 +10,8 @@ import projects from "../../data/ProjectsList.js";
 
 export default function Projects() {
   return (
-    <section id="projects" className="background">
-      <div className={styles.projectsSectionContainer}>
+    <section id="projects" className="pb-20">
+      <div className="flex-col items-center justify-center mx-[21%]">
 
         {/* project section title */}
         <AnimationOnScroll
@@ -21,7 +19,7 @@ export default function Projects() {
           animateOut="animate__fadeOut"
           duration={1.75}
         >
-          <h1 className="sectionTitle textCentered">projects</h1>
+          <h1 className="uppercase p-20 text-5xl text-center font-bold">projects</h1>
         </AnimationOnScroll>
 
         {/* list of projects alternating directions */}

@@ -2,26 +2,25 @@
 import styles from "./Intro.module.css";
 import "animate.css";
 
-
 //set cookie to only play animation every 2 days?  So it doesn't get replayed on reload of page
 
-function Intro() {
+export default function Intro() {
+
   return (
-    <div className="centered fullscreen oneColumn">
+    <div className="flex flex-col items-center justify-center h-screen mx-[21%]">
       <header>
         <h1
-          className={`${styles.introTextSize} ${styles.introFirstLine} animate__animated animate__fadeIn`}
+          className={`text-6xl mb-6 animate__animated animate__fadeIn font-bold ${styles.introFirstLine}`}
         >
-          Hi, I'm <span className={styles.introName}>Scott</span>.
+          Hi, I'm{" "}
+          <span className="bg-main bg-clip-text text-transparent">Scott</span>.
         </h1>
         <h1
-          className={`${styles.introTextSize} ${styles.introSecondLine} animate__animated animate__fadeIn`}
+          className={`text-6xl mb-6 animate__animated animate__fadeIn font-bold ${styles.introSecondLine}`}
         >
-          I'm a front end developer.
+          I'm a frontend developer.
         </h1>
       </header>
     </div>
   );
 }
-
-export default Intro;

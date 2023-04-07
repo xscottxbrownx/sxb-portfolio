@@ -1,12 +1,10 @@
-// Style Imports
-import styles from "./PrimaryNav.module.css";
 // Component Imports
 import SlantedLink from "../SlantedLink/SlantedLink";
 
 
-function PrimaryNav() {
+export default function PrimaryNav() {
   return (
-    <nav className={styles.primaryNavWrapper}>
+    <nav className="flex items-center justify-start pl-2">
       <SlantedLink href="#skills" text="skills" />
       <SlantedLink href="#projects" text="projects" />
       <SlantedLink href="#about" text="about" />
@@ -14,5 +12,3 @@ function PrimaryNav() {
     </nav>
   );
 }
-
-export default PrimaryNav;
