@@ -1,7 +1,7 @@
 // Style Imports
 // import styles from "./Modal.module.css";
 
-function Modal({showModal, setShowModal}) {
+export default function Modal({showModal, setShowModal}) {
 
   const toggleModal = () => setShowModal(!showModal);
 
@@ -31,5 +31,3 @@ function Modal({showModal, setShowModal}) {
     </>
   );
 }
-
-export default Modal;
