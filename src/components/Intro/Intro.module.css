@@ -1,18 +1,6 @@
-.introTextSize {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-}
-
 .introFirstLine {
     animation: fadeIn;
     --animate-duration: 3.25s;
-}
-
-.introName {
-    background-image: var(--main);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .introSecondLine {

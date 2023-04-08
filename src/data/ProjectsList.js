@@ -37,7 +37,7 @@ const projects = [
     hrefViewLive: "http://www.loan.scottxbrown.com",
   },
   {
-    title: "Tickets Bot documentation",
+    title: "Tickets Bot Documentation",
     tech: ["Markdown", "mdbook", "webp Images"],
     description:
       "I've used this discord bot since February 2022. It was clear their team needed much help with customer support and the documentation on the bot was lacking. I took it upon myself to help their users in the Tickets bot Support discord server. Tickets bot team ultimately saw the value I provided and offered me a spot on their official support team.  Shortly after, I convinced them to allow me to completely re-write the documentation to explain all features, settings, and possible configuration options - as it was obviously needed.",
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     title: "Portfolio Site",
-    tech: ["React", "EmailJS", "Animate-On-Scroll"],
+    tech: ["React", "EmailJS", "Animate-On-Scroll", "Tailwind"],
     description:
       "You are currently here. Site to house the current portfolio and resume of Scott Brown. Contact information available as well as links to social media profiles.",
     imageLink: project4img,

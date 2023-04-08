@@ -1,5 +1,3 @@
-// Style Imports
-import styles from "./Toggle.module.css";
 // React Icons Imports
 import { FaSun, FaMoon } from "react-icons/fa";
 import { IconContext } from "react-icons";
@@ -7,11 +5,12 @@ import { IconContext } from "react-icons";
 
 // Set this with localStorage, so it remembers my choice
  
-function Toggle() {
+export default function Toggle() {
+
   return (
-    <div className={styles.toggleContainer}>
-      <IconContext.Provider value={{ className: "toggleIcons" }}>
-        <button className={styles.iconContainer}>
+    <div className="flex items-center justify-center mr-6">
+      <IconContext.Provider value={{ className: "h-[1.15rem] w-1.15[rem]" }}>
+        <button className="flex items-center justify-center">
           <FaSun />
           <FaMoon />
         </button>
@@ -19,5 +18,3 @@ function Toggle() {
     </div>
   );
 }
-
-export default Toggle;

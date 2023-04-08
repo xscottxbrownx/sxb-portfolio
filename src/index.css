@@ -1,3 +1,9 @@
+/* necessary for tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* color variables - also set in tailwind.config.js */
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -8,6 +14,7 @@
   --accent4: rgb(220, 222, 222);
 }
 
+/* ===== START GLOBAL CSS ====== */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -47,107 +54,10 @@ a, button {
 ul {
   list-style-type: none;
 }
+/* ===== END GLOBAL CSS ====== */
 
-.background {
-  padding-bottom: 5rem;
-}
 
-.backgroundColor {
-  background: var(--main);
-  padding-bottom: 5rem;
-}
-
-.centered {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.fullscreen {
-  height: 100vh;
-}
-
-.mainColor {
-  color: var(--main);
-}
-
-.textCentered {
-  text-align: center;
-}
-
-.flexbox {
-  display: flex;
-}
-
-.oneColumn {
-  margin-left: 20%;
-  margin-right: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.twoColumns {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.toggleIcons {
-  height: 1.15rem;
-  width: 1.15rem;
-}
-
-.secondaryNavIcon {
-  height: 2.5rem;
-  width: 2.5rem;
-  color: var(--black);
-}
-
-.secondaryNavIcon:hover {
-  /*color: var(--main);*/
-  color: var(--accent2);
-}
-
-.skillsIcon {
-  height: 3rem;
-  width: 3rem;
-  margin: 1rem;
-}
-
-.sectionTitle {
-  font-size: 2.75rem;
-  text-transform: uppercase;
-  padding: 5rem;
-}
-
-.contactNavIcon {
-  height: 3.5rem;
-  width: 3.5rem;
-  padding: .5rem;
-}
-
-.contactButtonIcon {
-  background-image: var(--main);
-  color: var(--white);
-  /*color: var(--main);*/
-}
-
-.contactButtonIcon:hover {
-  background-image: var(--main);
-  color: var(--white);
-
-}
-
-.footerArrowIcon {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-/* all from Modal.module.css */
+/* ===== START MODAL ===== */
 body.active-modal {
   overflow-y: hidden;
 }
@@ -189,3 +99,4 @@ body.active-modal {
   right: 10px;
   padding: 5px 7px;
 }
+/* ===== END MODAL ===== */

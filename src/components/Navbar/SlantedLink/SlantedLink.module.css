@@ -1,0 +1,7 @@
+.slantedLink {
+    border-image: var(--main) 1;
+}
+
+.slantedLink:hover {
+    background: var(--main);
+}

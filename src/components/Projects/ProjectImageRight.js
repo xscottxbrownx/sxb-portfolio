@@ -1,9 +1,7 @@
 // Imports from React Animate On Scroll
 import { AnimationOnScroll } from "react-animation-on-scroll";
 // Imported Components
-import ProjectsCard from "../ProjectsCard/ProjectsCard";
-// Imported Stylesheet
-import styles from "./Projects.module.css";
+import ProjectsCard from "./ProjectsCard/ProjectsCard";
 
 
 
@@ -11,7 +9,7 @@ export default function ProjectImageRight({project}) {
   const { title, tech, description, imageLink, imageAlt, imageStyle, hrefSourceCode, hrefViewLive } = project;
 
   return (
-    <div className={`twoColumns ${styles.projectMarginBottom}`}>
+    <div className="flex justify-between items-center w-full mb-12">
       {/* project description */}
       <AnimationOnScroll
         animateIn="animate__fadeInLeft"

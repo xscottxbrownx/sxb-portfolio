@@ -1,7 +1,6 @@
-// Style Imports
-import styles from "./About.module.css";
 // React Animate On Scroll Imports
 import { AnimationOnScroll } from "react-animation-on-scroll";
+
 
 // ABOUT ME TEXT - make any changes here
 const aboutMainText = (
@@ -13,7 +12,7 @@ const aboutMainText = (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span className={styles.aboutLink}>bird mafia</span>
+      <span className="font-bold">bird mafia</span>
     </a>{" "}
     with my wife. My 19 year career in big box retail management has prepared me
     for a fast-paced, high stress enviornment. Working as a Store Manager has
@@ -24,33 +23,38 @@ const aboutMainText = (
   </p>
 );
 
+
+
 // MAIN COMPONENT THIS FILE RENDERS
-function About() {
+export default function About() {
+
   return (
-    <section id="about" className="backgroundColor fullscreen">
-      <div className={styles.aboutContainer}>
+    <section id="about" className="bg-main pb-20 h-screen">
+      <div className="flex flex-col items-center justify-center mx-[21%]">
         {/* about section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
           animateOut="animate__fadeOut"
           duration={1.75}
+          className="uppercase p-20 text-5xl font-bold"
         >
-          <h1 className="sectionTitle">about</h1>
+          <h1>about</h1>
         </AnimationOnScroll>
 
         {/*<AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" offset={200}>*/}
-        <div className="twoColumns">
+        <div className="flex justify-evenly items-center">
           {/* about section image */}
           <AnimationOnScroll
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
             offset={150}
             duration={0.6}
+            className="w-[300px] h-[450px]"
           >
             <img
               src="https://via.placeholder.com/300x450/FFFFFF/000000?text=Stylized+Photo+Of+Scott"
               alt="Scott"
-              style={{ border: "black solid 2px" }}
+              className="border-black border-solid border-2"
             />
           </AnimationOnScroll>
 
@@ -60,8 +64,9 @@ function About() {
             animateOut="animate__fadeOut"
             offset={150}
             duration={0.6}
+            className="items-center text-center leading-8 m-12 w-1/2"
           >
-            <div className={styles.aboutText}>{aboutMainText}</div>
+            <div>{aboutMainText}</div>
           </AnimationOnScroll>
         </div>
         {/*</AnimationOnScroll>*/}
@@ -69,5 +74,3 @@ function About() {
     </section>
   );
 }
-
-export default About;
