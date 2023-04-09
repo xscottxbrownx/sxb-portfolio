@@ -20,7 +20,8 @@ export default function Contact() {
   const [showModal, setShowModal] = useState(false);
   const toggleModal = () => setShowModal((showModal) => !showModal);
 
-
+  
+  // handle SEND button
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -41,6 +42,12 @@ export default function Contact() {
     toggleModal();
     e.target.reset();
   };
+
+
+  // breakpoint to determine what padding to use on SEND button
+  const mobileView = window.innerWidth <= 768;
+  const paddingX = mobileView ? "px-2" : "px-4"
+  const paddingY = mobileView ? "py-[.20rem]" : "py-[.40rem]"
 
 
 
@@ -141,7 +148,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className={`py-1.5 px-4 flex font-bold -skew-x-[38deg] bg-main bg-clip-text text-transparent border-2 group ${styles.contactButton}`}
+                className={`${paddingY} ${paddingX} flex font-bold -skew-x-[38deg] bg-main bg-clip-text text-transparent border-2 group ${styles.contactButton}`}
               >
                 <span
                   className={`uppercase text-xl font-semibold skew-x-[38deg] bg-main bg-clip-text text-transparent group-hover:text-white ${styles.contactButtonContent}`}
