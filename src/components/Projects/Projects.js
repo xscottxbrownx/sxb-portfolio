@@ -9,6 +9,21 @@ import projects from "../../data/ProjectsList.js";
 
 
 export default function Projects() {
+
+  // breakpoint to determine when to stack images on top of text
+  const mobileView = window.innerWidth <= 768;
+
+  // create the list of projects
+  // image alternates sides on tablet and above
+  const renderedProjects = projects.map((project, index) => {
+    const isLeftImage = index % 2 === 0;
+
+    return mobileView || isLeftImage 
+    ? <ProjectImageLeft key={index} project={project} />
+    : <ProjectImageRight key={index} project={project} />
+  });
+
+
   return (
     <section id="projects" className="pb-20">
       <div className="flex-col items-center justify-center mx-[21%]">
@@ -22,23 +37,9 @@ export default function Projects() {
           <h1 className="uppercase p-20 text-5xl text-center font-bold">projects</h1>
         </AnimationOnScroll>
 
-        {/* list of projects alternating directions */}
-        {projects.map((project, index) => {
-          const isLeftImage = index % 2 === 0;
-          return isLeftImage
-            ? (
-              <ProjectImageLeft
-                key={index}
-                project={project}
-              />
-            )
-            : (
-              <ProjectImageRight
-                key={index}
-                project={project}
-              />
-            );
-        })}
+        {/* list of projects */}
+        {renderedProjects}
+
       </div>
     </section>
   );
