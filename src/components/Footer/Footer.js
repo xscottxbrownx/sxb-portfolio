@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-main flex items-center justify-center">
       <a
         href="#top"
-        className="p-12 transition-transform ease-in-out duration-500 hover:text-white hover:-translate-y-2"
+        className="p-4 md:p-12 transition-transform ease-in-out duration-500 hover:text-white hover:-translate-y-2"
       >
         <div className="flex justify-center">
           <IconContext.Provider value={{ className: "h-6 w-6" }}>

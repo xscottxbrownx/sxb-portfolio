@@ -44,12 +44,6 @@ export default function Contact() {
   };
 
 
-  // breakpoint to determine what padding to use on SEND button
-  const mobileView = window.innerWidth <= 768;
-  const paddingX = mobileView ? "px-2" : "px-4"
-  const paddingY = mobileView ? "py-[.20rem]" : "py-[.40rem]"
-
-
 
   return (
     <section id="contact" className="pb-20">
@@ -148,7 +142,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className={`${paddingY} ${paddingX} flex font-bold -skew-x-[38deg] bg-main bg-clip-text text-transparent border-2 group ${styles.contactButton}`}
+                className={`py-[.20rem] md:py-[.40rem] px-2 md:px-4 flex font-bold -skew-x-[38deg] bg-main bg-clip-text text-transparent border-2 group ${styles.contactButton}`}
               >
                 <span
                   className={`uppercase text-xl font-semibold skew-x-[38deg] bg-main bg-clip-text text-transparent group-hover:text-white ${styles.contactButtonContent}`}
