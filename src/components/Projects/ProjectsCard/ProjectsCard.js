@@ -11,16 +11,17 @@ export default function ProjectsCard({
   hrefViewLive,
 }) {
 
+
   return (
     // project card with all info on project
-    <div className="flex-col justify-center text-center m-12">
+    <div className="text-center flex flex-col justify-center mx-[10%] lg:mx-0">
       <h2 className="text-2xl font-bold">{projectTitle}</h2>
 
       {/* list of tech stack used in project */}
-      <div id="techButtons" className="flex justify-center my-4">
+      <div id="techButtons" className="text-center inline-flex justify-center my-4">
         {projectTech.map((tech) => (
           <div
-            className="m-1 py-[3px] px-[10px] cursor-default bg-accent4 text-xs font-light rounded"
+            className="m-0.5 lg:m-1 py-[3px] px-[3px] lg:px-[10px] cursor-default bg-accent4 text-xs font-light rounded"
             key={tech.toString()}
           >
             {tech}
@@ -34,7 +35,7 @@ export default function ProjectsCard({
       </div>
 
       {/* links to code and hosted project */}
-      <div className="flex justify-center mt-4">
+      <div className="flex flex-col md:flex-row items-center justify-center mt-4">
         <SlantedLink
           href={hrefSourceCode}
           text="source code"

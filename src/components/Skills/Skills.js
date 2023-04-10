@@ -36,7 +36,7 @@ export default function Skills() {
           animateOut="animate__fadeOut"
           duration={1.75}
         >
-          <h1 className="uppercase p-20 text-5xl text-center font-bold">skills</h1>
+          <h1 className="uppercase p-20 text-4xl lg:text-5xl text-center font-bold">skills</h1>
         </AnimationOnScroll>
 
         <IconContext.Provider value={{ className: "h-12 w-12 m-4" }}>

@@ -29,32 +29,30 @@ const aboutMainText = (
 export default function About() {
 
   return (
-    <section id="about" className="bg-main pb-20 h-screen">
-      <div className="flex flex-col items-center justify-center mx-[21%]">
+    <section id="about" className="bg-main pb-20 h-full">
+      <div className="flex flex-col items-center justify-center mx-[10%] lg:mx-[21%]">
         {/* about section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
           animateOut="animate__fadeOut"
           duration={1.75}
-          className="uppercase p-20 text-5xl font-bold"
         >
-          <h1>about</h1>
+          <h1 className="uppercase p-20 text-4xl lg:text-5xl font-bold">about</h1>
         </AnimationOnScroll>
 
-        {/*<AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut" offset={200}>*/}
-        <div className="flex justify-evenly items-center">
+        <div className="flex flex-col lg:flex-row justify-evenly items-center">
           {/* about section image */}
           <AnimationOnScroll
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOut"
             offset={150}
             duration={0.6}
-            className="w-[300px] h-[450px]"
+            className="mb-4 lg:mb-0"
           >
             <img
               src="https://via.placeholder.com/300x450/FFFFFF/000000?text=Stylized+Photo+Of+Scott"
               alt="Scott"
-              className="border-black border-solid border-2"
+              className="border-black border-solid border-2 w-[250px] h-[275px] lg:w-[300px] lg:h-[450px]"
             />
           </AnimationOnScroll>
 
@@ -64,9 +62,9 @@ export default function About() {
             animateOut="animate__fadeOut"
             offset={150}
             duration={0.6}
-            className="items-center text-center leading-8 m-12 w-1/2"
+            className="items-center text-center leading-8 lg:m-12 lg:w-3/5"
           >
-            <div>{aboutMainText}</div>
+            {aboutMainText}
           </AnimationOnScroll>
         </div>
         {/*</AnimationOnScroll>*/}
