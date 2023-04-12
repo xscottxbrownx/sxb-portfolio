@@ -11,7 +11,7 @@ import { FaFilePdf, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function PrimaryNav({ mobileMenu, setMobileMenu }) {
 
-  const handleClick = () => setMobileMenu(!mobileMenu);
+  const handleClick = () => setMobileMenu((mobileMenu) => !mobileMenu);
 
 
   return (
@@ -60,7 +60,7 @@ export default function PrimaryNav({ mobileMenu, setMobileMenu }) {
         <IconContext.Provider
           value={{ className: "h-10 w-10 text-black hover:text-accent2" }}
         >
-          <button className="outline-none" onClick={handleClick}>
+          <button className="outline-none" onClick={() => handleClick()}>
             {mobileMenu ? <MdClose /> : <GiHamburgerMenu />}
           </button>
         </IconContext.Provider>

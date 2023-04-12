@@ -1,6 +1,6 @@
 export default function Modal({ showModal, setShowModal }) {
 
-  const toggleModal = () => setShowModal(!showModal);
+  const toggleModal = () => setShowModal((showModal) => !showModal);
 
   if (showModal) {
     document.body.classList.add("active-modal");

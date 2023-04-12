@@ -14,7 +14,7 @@ export default function SlantedLink({
 
   const handleClick = () => {
     if (mobileMenu) {
-      setMobileMenu(!mobileMenu);
+      setMobileMenu((mobileMenu) => !mobileMenu);
     }
   };
 
@@ -26,7 +26,7 @@ export default function SlantedLink({
       href={href}
       target={target}
       rel={rel}
-      onClick={handleClick}
+      onClick={() => handleClick()}
     >
       <span className="uppercase skew-x-[38deg] bg-main bg-clip-text text-transparent group-hover:text-white">
         {text}
