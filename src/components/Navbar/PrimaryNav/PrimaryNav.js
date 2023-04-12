@@ -13,7 +13,7 @@ export default function PrimaryNav({ mobileMenu, setMobileMenu }) {
 
 
   return (
-    <nav>
+    <nav> 
       <div
         className={
           mobileMenu
@@ -51,7 +51,7 @@ export default function PrimaryNav({ mobileMenu, setMobileMenu }) {
       <div
         className={
           mobileMenu
-            ? "flex items-center justify-start pl-2"
+            ? "flex items-center justify-start"
             : "md:hidden flex items-center justify-start pl-2"
         }
       >
