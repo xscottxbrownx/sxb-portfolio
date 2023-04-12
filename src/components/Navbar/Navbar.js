@@ -1,3 +1,5 @@
+// React Imports
+import { useState } from "react";
 // Style Imports
 import styles from "./Navbar.module.css";
 // Component Imports
@@ -8,15 +10,21 @@ import SecondaryNav from "./SecondaryNav/SecondaryNav.js";
 
 export default function Navbar() {
 
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const border = mobileMenu ? "border-b-accent-4 border-b-4" : "";
+
   return (
-    <div className="top-0 left-0 z-50 sticky pt-1 pb-1 pr-1 pl-3 flex items-center justify-between bg-white">
+    <div className={`top-0 left-0 z-50 sticky py-1 pr-1 pl-3 flex items-center justify-between bg-white ${border}`}>
+
       <div className={`animate__animated animate__fadeIn ${styles.navbarLeft}`}>
-        <PrimaryNav />
+        <PrimaryNav mobileMenu={mobileMenu} setMobileMenu={setMobileMenu}/>
       </div>
+
       <div className={`flexbox animate__animated animate__fadeIn ${styles.navbarRight}`}>
         {/* Add Toggle.js here - when complete */}
-        <SecondaryNav />
+        <SecondaryNav mobileMenu={mobileMenu}/>
       </div>
+
     </div>
   );
 }

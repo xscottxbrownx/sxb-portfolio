@@ -5,10 +5,10 @@ import Resume from "../../../assets/Scott_Brown_Resume.pdf";
 
 
 
-export default function SecondaryNav() {
+export default function SecondaryNav({ mobileMenu }) {
   
   return (
-    <div className="flex">
+    <div className={ mobileMenu ? "hidden" : "flex" }>
       <IconContext.Provider value={{ className: "h-10 w-10 text-black hover:text-accent2" }}>
         {/* LinkedIn */}
         <a
