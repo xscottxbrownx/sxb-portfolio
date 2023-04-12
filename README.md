@@ -58,12 +58,12 @@ A challenge I ran into early on was how to link the contact form to sending an e
 
 I spent a couple days optimizing the text, links, and icons when I finished my [loan](https://www.loan.scottxbrown.com) project and added that to the projects section of the site.
 
-Once I added another project to the list, I spent a week doing that, optimizing more code, and converting all my vanilla CSS to Tailwind.
+Once I added another project to the list ([mockup site](https://www.fmc.scottxbrown.com)), I spent a week doing that, optimizing more code, and converting all my vanilla CSS to `Tailwind`.
 I chose to use Tailwind as it was something new to me, and seemed to be gaining popularity in the industry. During this time I learned quite a bit about Tailwind and how to customize it further through it's `tailwind.config.js` file. 
 
-During this time I also decided to tackle something else new for me, which was adding a pop-up modal when users submitted an email through the contact form - BUT with an overlay and stopped their ability to scroll.
+I also decided to tackle something else new for me, which was adding a pop-up modal when users submitted an email through the contact form - BUT with an overlay and stopping the user's ability to scroll.
 
-**At the end of this period, I ended up with a site that has all information needed to contact me for any reason and a portfolio of work to view**
+**At the end of this period, I ended up with a site that has all the information needed to contact me for any reason, a quick bio about myself, and a portfolio of work to view.**
 
 **The technologies implemented in this project are:**
 - React
