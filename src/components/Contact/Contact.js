@@ -66,7 +66,7 @@ export default function Contact() {
             duration={0.6}
           >
             {/* social media icon links */}
-            <div className="flex lg:flex-col items-center justify-center mb-12">
+            <div className="hidden xs:flex lg:flex-col items-center justify-center mb-12">
               <IconContext.Provider value={{ className: "h-6 w-6 lg:h-14 lg:w-14 lg:p-2" }}>
                 {/* Resume */}
                 <a

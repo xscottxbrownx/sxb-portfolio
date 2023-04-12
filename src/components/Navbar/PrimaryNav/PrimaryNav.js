@@ -1,9 +1,11 @@
 // Component Imports
 import SlantedLink from "../SlantedLink/SlantedLink";
+import Resume from "../../../assets/Scott_Brown_Resume.pdf";
 // React Icons Imports
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { IconContext } from "react-icons";
+import { FaFilePdf, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 
 
@@ -101,6 +103,51 @@ export default function PrimaryNav({ mobileMenu, setMobileMenu }) {
               />
             </li>
           </ul>
+          {/* social media icon links */}
+          <div className="flex-col xs:hidden items-center">
+              <IconContext.Provider value={{ className: "h-6 w-6 lg:h-14 lg:w-14 lg:p-2" }}>
+                {/* Resume */}
+                <a
+                  className="flex items-center justify-center mx-1 my-3 lg:p-4 hover:text-accent2"
+                  href={`${Resume}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFilePdf />
+                  <h2 className="lg:p-2 font-extrabold text-base lg:text-2xl">Resume</h2>
+                </a>
+                {/* LinkedIn */}
+                <a
+                  className="flex items-center justify-center mx-1 my-3 lg:p-4 hover:text-accent2"
+                  href="https://www.linkedin.com/in/scott-x-brown/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin />
+                  <h2 className="lg:p-2 font-extrabold text-base lg:text-2xl">LinkedIn</h2>
+                </a>
+                {/* Github */}
+                <a
+                  className="flex items-center justify-center mx-1 my-3 lg:p-4 hover:text-accent2"
+                  href="https://github.com/xscottxbrownx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub />
+                  <h2 className="lg:p-2 font-extrabold text-base lg:text-2xl">Github</h2>
+                </a>
+                {/* Email */}
+                <a
+                  className="flex items-center justify-center mx-1 my-3 lg:p-4 hover:text-accent2"
+                  href="mailto:hello@scottxbrown.com?subject=Contacting%20via%20scottxbrown.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaEnvelope />
+                  <h2 className="lg:p-2 font-extrabold text-base lg:text-2xl">Email</h2>
+                </a>
+              </IconContext.Provider>
+            </div>
         </div>
       )}
     </nav>

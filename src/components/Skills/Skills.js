@@ -30,14 +30,14 @@ export default function Skills() {
 
   return (
     <section id="skills" className="bg-main pb-20 lg:h-screen">
-      <div className="flex flex-col mx-[5%] lg:mx-[21%]">
+      <div className="flex flex-col items-center justify-center mx-[5%] lg:mx-[21%]">
         {/* skills section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
           animateOut="animate__fadeOut"
           duration={1.75}
         >
-          <h1 className="uppercase p-20 text-4xl lg:text-5xl text-center font-bold">skills</h1>
+          <h1 className="uppercase p-20 text-4xl lg:text-5xl font-bold">skills</h1>
         </AnimationOnScroll>
 
         <IconContext.Provider value={{ className: "h-12 w-12 m-2 lg:m-4" }}>
@@ -151,5 +151,3 @@ export default function Skills() {
     </section>
   );
 }
-
-// className: "h-8 w-8 m-2 lg:h-12 lg:w-12 lg:m-4"
