@@ -11,6 +11,7 @@ Built with: `React`, `React Animation-On-Scroll`, `Animate.css`, `EmailJS`, `Rea
 # Project Status
 
 **Website containing the current portfolio, resume, and contact info of Scott Brown.** 
+A simple and intuitive UI with consistent design/color branding throughout.
 All projects listed have links to the usable live version and also the source code.
 
 ***
