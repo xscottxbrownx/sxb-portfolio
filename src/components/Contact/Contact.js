@@ -5,12 +5,13 @@ import styles from "./Contact.module.css";
 // React Animate On Scroll Imports
 import { AnimationOnScroll } from "react-animation-on-scroll";
 // React Icons Imports
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaFilePdf, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { IconContext } from "react-icons";
 // EmailJS Imports
 import emailjs from "@emailjs/browser";
 // Custom Component Imports
 import Modal from "./Modal";
+import Resume from "../../assets/Scott_Brown_Resume.pdf";
 
 
 
@@ -67,6 +68,18 @@ export default function Contact() {
             {/* social media icon links */}
             <div className="flex lg:flex-col items-center justify-center mb-12">
               <IconContext.Provider value={{ className: "h-6 w-6 lg:h-14 lg:w-14 lg:p-2" }}>
+                {/* Resume */}
+                <a
+                  className="flex items-center justify-center mx-1 lg:p-4 hover:text-accent2"
+                  href={`${Resume}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFilePdf />
+                  <h2 className="lg:p-2 font-extrabold text-base lg:text-2xl">Resume</h2>
+                </a>
+
+
                 {/* LinkedIn */}
                 <a
                   className="flex items-center justify-center mx-1 lg:p-4 hover:text-accent2"
