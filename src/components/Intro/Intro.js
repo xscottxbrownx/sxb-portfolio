@@ -10,13 +10,13 @@ export default function Intro() {
     <div className="flex flex-col items-center justify-center h-screen mx-[21%]">
       <header>
         <h1
-          className={`text-6xl mb-6 animate__animated animate__fadeIn font-bold ${styles.introFirstLine}`}
+          className={`text-5xl sm:text-6xl mb-6 animate__animated animate__fadeIn font-bold ${styles.introFirstLine}`}
         >
           Hi, I'm{" "}
           <span className="bg-main bg-clip-text text-transparent">Scott</span>.
         </h1>
         <h1
-          className={`text-6xl mb-6 animate__animated animate__fadeIn font-bold ${styles.introSecondLine}`}
+          className={`text-5xl sm:text-6xl mb-6 animate__animated animate__fadeIn font-bold ${styles.introSecondLine}`}
         >
           I'm a frontend developer.
         </h1>

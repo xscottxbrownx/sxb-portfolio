@@ -6,17 +6,21 @@ import project4img from "../assets/project_photos/Portfolio.webp"
 
 
 
+// breakpoint to determine when to size of images
+const mobileView = window.innerWidth <= 1024;
+
+
 const imageStyle = {
   border: "black solid 2px",
-  width: 400,
-  height: 300,
+  width: mobileView ? 250 : 400,
+  height: mobileView ? 200 : 300,
 };
 
 
 const projects = [
   {
     title: "FMC Site Mockup",
-    tech: ["NextJS", "AlchemySDK", "FontAwesome", "NFTs", "Crypto"],
+    tech: ["NextJS", "AlchemySDK", "FontAwesome", "Web3"],
     description:
       "A mockup site for a company that I co-founded in late September 2021. This company started as a discord server for NFT traders and friends. It quickly grew to over 15k members and 60k twitter followers all organically (no bots.) The server was focused on NFT education and alpha, and as such we also launched our own NFT to token-gate the valuable information in April 2022. This mockup has all information needed about the company and a dashboard area that includes: connection to your web 3 wallet or typed in wallet address, gallery of nfts, token balances, last 30 day history of transactions, floor price and holder informational charts by collection, and some more work-in-progress components.",
     imageLink: project1img,
