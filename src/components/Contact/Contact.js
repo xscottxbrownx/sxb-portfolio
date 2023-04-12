@@ -1,5 +1,5 @@
 // React Imports
-import { useRef, useState } from "react";
+import { useRef } from "react";
 // Style Imports
 import styles from "./Contact.module.css";
 // React Animate On Scroll Imports
@@ -10,15 +10,13 @@ import { IconContext } from "react-icons";
 // EmailJS Imports
 import emailjs from "@emailjs/browser";
 // Custom Component Imports
-import Modal from "./Modal";
 import Resume from "../../assets/Scott_Brown_Resume.pdf";
 
 
 
-export default function Contact() {
+export default function Contact({showModal, setShowModal}) {
 
   const form = useRef();
-  const [showModal, setShowModal] = useState(false);
   const toggleModal = () => setShowModal((showModal) => !showModal);
 
   
@@ -40,7 +38,7 @@ export default function Contact() {
           console.error(error.text);
         }
       );
-    toggleModal();
+    toggleModal(showModal);
     e.target.reset();
   };
 
@@ -167,7 +165,6 @@ export default function Contact() {
           </AnimationOnScroll>
         </div>
       </div>
-      <Modal showModal={showModal} setShowModal={setShowModal} />
     </section>
   );
 }

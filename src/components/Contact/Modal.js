@@ -12,10 +12,10 @@ export default function Modal({ showModal, setShowModal }) {
   return (
     <>
       {showModal && (
-        <div className="w-screen h-screen fixed top-0 right-0 bottom-0 left-0">
+        <div className="w-screen h-screen fixed top-0 right-0 bottom-0 left-0 z-50">
           <div
             className="w-screen h-screen fixed top-0 right-0 bottom-0 left-0 bg-gray-900/75 cursor-pointer"
-            onClick={toggleModal}
+            onClick={() => toggleModal()}
           />
           <div className="bg-gray-100 absolute left-[50%] top-[40%] -translate-x-1/2 -translate-y-1/2 p-7 leading-6 rounded max-w-[600px] min-w-[275px]">
             <h2 className="text-xl font-bold">Contact Form Submitted</h2>
@@ -28,7 +28,7 @@ export default function Modal({ showModal, setShowModal }) {
             </div>
             <button
               className="absolute top-2.5 right-2.5 py-1 px-2 font-black uppercase"
-              onClick={toggleModal}
+              onClick={() => toggleModal()}
             >
               X
             </button>

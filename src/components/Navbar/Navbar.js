@@ -14,7 +14,7 @@ export default function Navbar() {
   const border = mobileMenu ? "border-b-accent-4 border-b-4" : "";
 
   return (
-    <div className={`top-0 left-0 z-50 fixed w-full py-1 sm:pl-3 flex items-center justify-between bg-white ${border}`}>
+    <div className={`top-0 left-0 z-10 fixed w-full py-1 sm:pl-3 flex items-center justify-between bg-white ${border}`}>
 
       <div className={`animate__animated animate__fadeIn ${styles.navbarLeft}`}>
         <PrimaryNav mobileMenu={mobileMenu} setMobileMenu={setMobileMenu}/>
