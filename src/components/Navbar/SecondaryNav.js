@@ -1,7 +1,7 @@
 // React Icons imports
 import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import Resume from "../../../assets/Scott_Brown_Resume.pdf";
+import Resume from "../../assets/Scott_Brown_Resume.pdf";
 
 
 
