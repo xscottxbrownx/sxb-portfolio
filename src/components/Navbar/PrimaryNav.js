@@ -8,6 +8,27 @@ import { IconContext } from "react-icons";
 import { FaFilePdf, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 
+// also used in ContactLinks.js
+export const iconLinks = [
+  { href: Resume, icon: <FaFilePdf />, name: "Resume" },
+  {
+    href: "https://www.linkedin.com/in/scott-x-brown/",
+    icon: <FaLinkedin />,
+    name: "LinkedIn",
+  },
+  {
+    href: "https://github.com/xscottxbrownx",
+    icon: <FaGithub />,
+    name: "Github",
+  },
+  {
+    href: "mailto:hello@scottxbrown.com?subject=Contacting%20via%20scottxbrown.com",
+    icon: <FaEnvelope />,
+    name: "Email",
+  },
+];
+
+
 
 export default function PrimaryNav({ mobileMenu, setMobileMenu }) {
 
@@ -51,25 +72,6 @@ export default function PrimaryNav({ mobileMenu, setMobileMenu }) {
     : "md:hidden flex items-center justify-start pl-2";
 
   const mobileMenuIcon = mobileMenu ? <MdClose /> : <GiHamburgerMenu />;
-
-  const iconLinks = [
-    { href: Resume, icon: <FaFilePdf />, name: "Resume" },
-    {
-      href: "https://www.linkedin.com/in/scott-x-brown/",
-      icon: <FaLinkedin />,
-      name: "LinkedIn",
-    },
-    {
-      href: "https://github.com/xscottxbrownx",
-      icon: <FaGithub />,
-      name: "Github",
-    },
-    {
-      href: "mailto:hello@scottxbrown.com?subject=Contacting%20via%20scottxbrown.com",
-      icon: <FaEnvelope />,
-      name: "Email",
-    },
-  ];
 
   const mobileMenuIconLinks = iconLinks.map((iconLink) => (
     <a
