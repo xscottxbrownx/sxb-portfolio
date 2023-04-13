@@ -1,5 +1,7 @@
 // React Animate On Scroll Imports
 import { AnimationOnScroll } from "react-animation-on-scroll";
+// Imported Assets
+import ScottPhoto from "../../assets/Scott.webp"
 
 
 // ABOUT ME TEXT - make any changes here
@@ -50,7 +52,7 @@ export default function About() {
             className="mb-4 lg:mb-0"
           >
             <img
-              src="https://via.placeholder.com/300x450/FFFFFF/000000?text=Stylized+Photo+Of+Scott"
+              src={ScottPhoto}
               alt="Scott"
               className="border-black border-solid border-2 w-[250px] h-[275px] lg:w-[300px] lg:h-[450px]"
             />
