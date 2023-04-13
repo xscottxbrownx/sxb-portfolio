@@ -3,9 +3,9 @@ import { useState } from "react";
 // Style Imports
 import styles from "./Navbar.module.css";
 // Component Imports
-import PrimaryNav from "./PrimaryNav/PrimaryNav.js";
+import PrimaryNav from "./PrimaryNav.js";
 // import Toggle from "../Toggle/Toggle.js";
-import SecondaryNav from "./SecondaryNav/SecondaryNav.js";
+import SecondaryNav from "./SecondaryNav.js";
 
 
 export default function Navbar() {
