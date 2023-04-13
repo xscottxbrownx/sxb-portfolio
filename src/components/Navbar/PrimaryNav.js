@@ -10,7 +10,11 @@ import { FaFilePdf, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 // also used in ContactLinks.js
 export const iconLinks = [
-  { href: Resume, icon: <FaFilePdf />, name: "Resume" },
+  { 
+    href: Resume,
+    icon: <FaFilePdf />,
+    name: "Resume" 
+  },
   {
     href: "https://www.linkedin.com/in/scott-x-brown/",
     icon: <FaLinkedin />,
