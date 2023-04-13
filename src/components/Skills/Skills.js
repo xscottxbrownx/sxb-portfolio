@@ -2,7 +2,7 @@
 import {
   FaLaptopCode,
   FaTools,
-  FaServer,
+  // FaServer,
   FaHtml5,
   FaCss3Alt,
   FaJsSquare,
@@ -11,12 +11,12 @@ import {
   FaGitAlt,
   FaGithubSquare,
   FaDiscord,
-  FaNode,
+  // FaNode,
 } from "react-icons/fa";
 import {
   SiVisualstudiocode,
-  SiFirebase,
-  SiPostgresql,
+  // SiFirebase,
+  // SiPostgresql,
   SiTailwindcss,
 } from "react-icons/si";
 import { IconContext } from "react-icons";
@@ -48,11 +48,11 @@ export default function Skills() {
   ];
 
   // MAKE ANY CHANGES TO BACKEND SKILLS HERE
-  const BackEndIcons = [
-    { Icon: FaNode, name: "Node.js"},
-    { Icon: SiFirebase, name: "Firebase"},
-    { Icon: SiPostgresql, name: "Postgres"},
-  ];
+  // const BackEndIcons = [
+  //   { Icon: FaNode, name: "Node.js"},
+  //   { Icon: SiFirebase, name: "Firebase"},
+  //   { Icon: SiPostgresql, name: "Postgres"},
+  // ];
 
 
   
@@ -71,7 +71,7 @@ export default function Skills() {
         <IconContext.Provider value={{ className: "h-12 w-12 m-2 lg:m-4" }}>
           <SkillCategory title="Front&nbsp;End" icons={FrontEndIcons} Icon={FaLaptopCode} />
           <SkillCategory title="Tools" icons={ToolIcons} Icon={FaTools} />
-          <SkillCategory title="Back&nbsp;End" icons={BackEndIcons} Icon={FaServer} />
+          {/* <SkillCategory title="Back&nbsp;End" icons={BackEndIcons} Icon={FaServer} /> */}
         </IconContext.Provider>
       </div>
     </section>
