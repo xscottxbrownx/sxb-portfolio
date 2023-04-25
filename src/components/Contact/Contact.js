@@ -6,7 +6,7 @@ import ContactForm from "./ContactForm";
 
 
 
-export default function Contact({showModal, setShowModal}) {
+export default function Contact({setShowModal}) {
 
   return (
     <section id="contact" className="pb-20">
@@ -14,7 +14,7 @@ export default function Contact({showModal, setShowModal}) {
         {/* contact section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
-          animateOut="animate__fadeOut"
+          animateOnce
           duration={1.75}
         >
           <h1 className="uppercase p-20 text-4xl lg:text-5xl font-bold">contact</h1>
@@ -24,7 +24,7 @@ export default function Contact({showModal, setShowModal}) {
           {/* social media icon links */}
           <AnimationOnScroll
             animateIn="animate__fadeInLeft"
-            animateOut="animate__fadeOut"
+            animateOnce
             offset={150}
             duration={0.6}
           >
@@ -33,11 +33,11 @@ export default function Contact({showModal, setShowModal}) {
           {/* contact form */}
           <AnimationOnScroll
             animateIn="animate__fadeInRight"
-            animateOut="animate__fadeOut"
+            animateOnce
             offset={150}
             duration={0.6}
           >
-            <ContactForm />
+            <ContactForm setShowModal={setShowModal}/>
           </AnimationOnScroll>
         </div>
       </div>

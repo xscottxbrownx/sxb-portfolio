@@ -31,7 +31,7 @@ export default function Projects() {
         {/* project section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
-          animateOut="animate__fadeOut"
+          animateOnce
           duration={1.75}
         >
           <h1 className="uppercase p-20 text-4xl lg:text-5xl font-bold">projects</h1>

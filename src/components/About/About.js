@@ -36,7 +36,7 @@ export default function About() {
         {/* about section title */}
         <AnimationOnScroll
           animateIn="animate__fadeIn"
-          animateOut="animate__fadeOut"
+          animateOnce
           duration={1.75}
         >
           <h1 className="uppercase p-20 text-4xl lg:text-5xl font-bold">about</h1>
@@ -46,7 +46,7 @@ export default function About() {
           {/* about section image */}
           <AnimationOnScroll
             animateIn="animate__fadeInLeft"
-            animateOut="animate__fadeOut"
+            animateOnce
             offset={150}
             duration={0.6}
             className="mb-4 lg:mb-0"
@@ -61,7 +61,7 @@ export default function About() {
           {/* about section text */}
           <AnimationOnScroll
             animateIn="animate__fadeInRight"
-            animateOut="animate__fadeOut"
+            animateOnce
             offset={150}
             duration={0.6}
             className="items-center text-center leading-8 lg:m-12 lg:w-3/5"
@@ -69,7 +69,6 @@ export default function About() {
             {aboutMainText}
           </AnimationOnScroll>
         </div>
-        {/*</AnimationOnScroll>*/}
       </div>
     </section>
   );

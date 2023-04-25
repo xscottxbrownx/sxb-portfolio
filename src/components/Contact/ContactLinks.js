@@ -9,6 +9,7 @@ export default function SocialMedia() {
 
   const contactIconLinks = iconLinks.map((iconLink) => (
     <a
+      key={iconLink.href}
       className="flex items-center justify-center mx-1 lg:p-4 hover:text-accent2"
       href={iconLink.href}
       target="_blank"

@@ -7,7 +7,7 @@ import styles from "./Contact.module.css";
 
 
 
-export default function ContactForm({ toggleModal }) {
+export default function ContactForm({setShowModal}) {
 
   const form = useRef();
 
@@ -29,7 +29,7 @@ export default function ContactForm({ toggleModal }) {
           console.error(error.text);
         }
       );
-    toggleModal();
+    setShowModal(true);
     e.target.reset();
   };
 

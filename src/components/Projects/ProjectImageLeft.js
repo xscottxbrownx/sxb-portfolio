@@ -29,7 +29,7 @@ export default function ProjectImageLeft({ project }) {
       {/* project image */}
       <AnimationOnScroll
         animateIn="animate__fadeInLeft"
-        animateOut="animate__fadeOut"
+        animateOnce
         offset={mobileView ? 150 : 300}
         duration={0.6}
         className="mb-4 lg:mb-0 lg:mx-6"
@@ -40,7 +40,7 @@ export default function ProjectImageLeft({ project }) {
       {/* project description */}
       <AnimationOnScroll
         animateIn="animate__fadeInRight"
-        animateOut="animate__fadeOut"
+        animateOnce
         offset={mobileView ? 150 : 300}
         duration={0.6}
         className="lg:w-3/5 lg:mx-6"

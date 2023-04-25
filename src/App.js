@@ -25,7 +25,7 @@ export default function App() {
         <Skills />
         <Projects />
         <About />
-        <Contact showModal={showModal} setShowModal={setShowModal} />
+        <Contact setShowModal={setShowModal} />
       </main>
       <Footer />
       <Modal showModal={showModal} setShowModal={setShowModal} />
