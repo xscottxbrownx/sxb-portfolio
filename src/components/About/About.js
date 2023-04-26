@@ -22,6 +22,7 @@ const aboutMainText = (
     communication skills. Collaboration with district staff, managers, and
     associates has emphasized the value of team work. I have been gaining
     experience in this field and am ready to contribute to a meaningful team.
+    Currently residing in Portland, OR.
   </p>
 );
 
