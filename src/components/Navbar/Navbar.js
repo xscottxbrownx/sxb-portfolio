@@ -11,6 +11,7 @@ import SecondaryNav from "./SecondaryNav.js";
 export default function Navbar() {
 
   const [mobileMenu, setMobileMenu] = useState(false);
+  // set bottom border on mobile menu (gets lost as white on white)
   const border = mobileMenu ? "border-b-accent-4 border-b-4" : "";
 
   return (

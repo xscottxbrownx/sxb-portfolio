@@ -17,8 +17,7 @@ export default function App() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <>
-      
+    <> 
       <Navbar />
       <main>
         <Intro />
