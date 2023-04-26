@@ -11,6 +11,17 @@ export default function ProjectsCard({
   hrefViewLive,
 }) {
 
+  
+  const projectTechList = projectTech.map((tech) => (
+    <div
+      className="m-0.5 lg:m-1 py-[3px] px-[3px] lg:px-[10px] cursor-default bg-accent4 text-xs font-light rounded"
+      key={tech.toString()}
+    >
+      {tech}
+    </div>
+  ));
+
+
 
   return (
     // project card with all info on project
@@ -19,14 +30,7 @@ export default function ProjectsCard({
 
       {/* list of tech stack used in project */}
       <div id="techButtons" className="text-center inline-flex justify-center my-4">
-        {projectTech.map((tech) => (
-          <div
-            className="m-0.5 lg:m-1 py-[3px] px-[3px] lg:px-[10px] cursor-default bg-accent4 text-xs font-light rounded"
-            key={tech.toString()}
-          >
-            {tech}
-          </div>
-        ))}
+        {projectTechList}
       </div>
 
       {/* project description */}
