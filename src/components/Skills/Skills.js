@@ -18,6 +18,7 @@ import {
   // SiFirebase,
   // SiPostgresql,
   SiTailwindcss,
+  SiMaterialui
 } from "react-icons/si";
 import { IconContext } from "react-icons";
 // React Animate On Scroll Imports
@@ -34,6 +35,7 @@ export default function Skills() {
   const FrontEndIcons = [
     { Icon: FaReact, name: "React" },
     { Icon: FaJsSquare, name: "Javascript" },
+    { Icon: SiMaterialui, name: "MaterialUI"},
     { Icon: SiTailwindcss, name: "Tailwind" },
     { Icon: FaBootstrap, name: "Boostrap" },
     { Icon: FaCss3Alt, name: "CSS" },
