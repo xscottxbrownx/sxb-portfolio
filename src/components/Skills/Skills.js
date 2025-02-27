@@ -14,11 +14,13 @@ import {
   // FaNode,
 } from "react-icons/fa";
 import {
-  SiVisualstudiocode,
+  SiChakraui,
   // SiFirebase,
+  SiJira,
+  SiMaterialui,
   // SiPostgresql,
   SiTailwindcss,
-  SiMaterialui
+  SiVisualstudiocode,
 } from "react-icons/si";
 import { IconContext } from "react-icons";
 // React Animate On Scroll Imports
@@ -27,16 +29,14 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 // Custom Component Imports
 import SkillCategory from "./SkillCategory";
 
-
-
 export default function Skills() {
-
   // MAKE ANY CHANGES TO FRONTEND SKILLS HERE
   const FrontEndIcons = [
     { Icon: FaReact, name: "React" },
     { Icon: FaJsSquare, name: "Javascript" },
-    { Icon: SiMaterialui, name: "MaterialUI"},
+    { Icon: SiMaterialui, name: "MaterialUI" },
     { Icon: SiTailwindcss, name: "Tailwind" },
+    { Icon: SiChakraui, name: "ChakraUI" },
     { Icon: FaBootstrap, name: "Boostrap" },
     { Icon: FaCss3Alt, name: "CSS" },
     { Icon: FaHtml5, name: "HTML" },
@@ -46,6 +46,7 @@ export default function Skills() {
   const ToolIcons = [
     { Icon: FaGitAlt, name: "GIT" },
     { Icon: FaGithubSquare, name: "Github" },
+    { Icon: SiJira, name: "Jira" },
     { Icon: SiVisualstudiocode, name: "VScode" },
     { Icon: FaDiscord, name: "Discord" },
   ];
@@ -56,8 +57,6 @@ export default function Skills() {
   //   { Icon: SiFirebase, name: "Firebase"},
   //   { Icon: SiPostgresql, name: "Postgres"},
   // ];
-
-
 
   return (
     <section id="skills" className="bg-main pb-20">
@@ -79,11 +78,7 @@ export default function Skills() {
             icons={FrontEndIcons}
             Icon={FaLaptopCode}
           />
-          <SkillCategory
-            title="Tools"
-            icons={ToolIcons}
-            Icon={FaTools}
-          />
+          <SkillCategory title="Tools" icons={ToolIcons} Icon={FaTools} />
           {/* <SkillCategory 
             title="Back&nbsp;End"
             icons={BackEndIcons}
