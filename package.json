@@ -1,7 +1,7 @@
 {
   "name": "sxb-portfolio",
   "homepage": "https://www.scottxbrown.com",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.9.0",
