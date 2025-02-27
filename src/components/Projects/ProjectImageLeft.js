@@ -1,3 +1,5 @@
+// Imports from React
+import { useEffect, useRef } from "react";
 // Imports from React Animate On Scroll
 import { AnimationOnScroll } from "react-animation-on-scroll";
 // Imported Components
@@ -16,6 +18,14 @@ export default function ProjectImageLeft({ project, mobileView }) {
     wip = false,
   } = project;
 
+  const animationTriggered = useRef(false);
+
+  useEffect(() => {
+    if (!animationTriggered.current) {
+      animationTriggered.current = true;
+    }
+  }, []);
+
   return (
     <div className="flex flex-col items-center w-full my-12 lg:my-20 lg:flex-row lg:justify-between lg:items-center">
       {/* project image */}
@@ -25,6 +35,7 @@ export default function ProjectImageLeft({ project, mobileView }) {
         offset={mobileView ? 150 : 300}
         duration={0.6}
         className="mb-4 lg:mb-0 lg:mx-6"
+        initiallyVisible={animationTriggered.current}
       >
         <img src={imageLink} alt={imageAlt} style={imageStyle} />
       </AnimationOnScroll>
@@ -36,6 +47,7 @@ export default function ProjectImageLeft({ project, mobileView }) {
         offset={mobileView ? 150 : 300}
         duration={0.6}
         className="lg:w-3/5 lg:mx-6"
+        initiallyVisible={animationTriggered.current}
       >
         <ProjectsCard
           projectTitle={title}
