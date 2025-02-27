@@ -1,5 +1,5 @@
 // React Imports
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 // React Animate On Scroll Imports
 import { AnimationOnScroll } from "react-animation-on-scroll";
 // Component Imports
@@ -13,13 +13,13 @@ export default function Projects() {
   const [mobileView, setMobileView] = useState(window.innerWidth <= 1024);
 
   useEffect(() => {
+    // update the state when the window is resized
     const handleResize = () => {
-      // update the state when the window is resized
       setMobileView(window.innerWidth <= 1024);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []); // empty dependency array to run only on mount and unmount
+  }, []);
 
   // create the list of projects
   // image alternates sides on tablet and above
@@ -27,9 +27,13 @@ export default function Projects() {
     const isLeftImage = index % 2 === 0;
 
     return mobileView || isLeftImage ? (
-      <ProjectImageLeft key={index} project={project} />
+      <ProjectImageLeft key={index} project={project} mobileView={mobileView} />
     ) : (
-      <ProjectImageRight key={index} project={project} />
+      <ProjectImageRight
+        key={index}
+        project={project}
+        mobileView={mobileView}
+      />
     );
   });
 
