@@ -3,7 +3,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 // Imported Components
 import ProjectsCard from "./ProjectsCard/ProjectsCard";
 
-export default function ProjectImageLeft({ project }) {
+export default function ProjectImageLeft({ project, mobileView }) {
   const {
     title,
     tech,
@@ -15,9 +15,6 @@ export default function ProjectImageLeft({ project }) {
     hrefViewLive,
     wip = false,
   } = project;
-
-  // breakpoint to determine when to stack images on top of text
-  const mobileView = window.innerWidth <= 1024;
 
   return (
     <div className="flex flex-col items-center w-full my-12 lg:my-20 lg:flex-row lg:justify-between lg:items-center">

@@ -1,3 +1,5 @@
+// React Imports
+import { useState, useEffect } from "react";
 // React Animate On Scroll Imports
 import { AnimationOnScroll } from "react-animation-on-scroll";
 // Component Imports
@@ -8,7 +10,16 @@ import projects from "../../data/ProjectsList.js";
 
 export default function Projects() {
   // breakpoint to determine when to stack images on top of text
-  const mobileView = window.innerWidth <= 1024;
+  const [mobileView, setMobileView] = useState(window.innerWidth <= 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // update the state when the window is resized
+      setMobileView(window.innerWidth <= 1024);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // empty dependency array to run only on mount and unmount
 
   // create the list of projects
   // image alternates sides on tablet and above
